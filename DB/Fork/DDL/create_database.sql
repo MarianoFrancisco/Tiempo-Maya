@@ -115,37 +115,5 @@ CREATE TABLE IF NOT EXISTS `uinal` (
   KEY `fk_uinal_categoria1_idx` (`categoria`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Restricciones para tablas volcadas
---
 
---
--- Filtros para la tabla `energia`
---
-ALTER TABLE `energia`
-  ADD CONSTRAINT `fk_energia_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
---
--- Filtros para la tabla `kin`
---
-ALTER TABLE `kin`
-  ADD CONSTRAINT `fk_kin_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
---
--- Filtros para la tabla `nahual`
---
-ALTER TABLE `nahual`
-  ADD CONSTRAINT `fk_nahual_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
---
--- Filtros para la tabla `pagina`
---
-ALTER TABLE `pagina`
-  ADD CONSTRAINT `FK_PAGINA_CATG` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
---
--- Filtros para la tabla `uinal`
---
-ALTER TABLE `uinal`
-  ADD CONSTRAINT `fk_uinal_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
 COMMIT;

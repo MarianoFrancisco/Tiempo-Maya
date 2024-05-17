@@ -110,21 +110,8 @@ INSERT INTO `energia` (`id`, `nombre`, `significado`, `htmlCodigo`, `nombreYucat
 (10, 'Lajuj', 'La Ley, La Autoridad, La Rectitud, La Impecabilidad', 'Principio de la Manifestación.<br><span></span>Manifestar, Producir, Perfecciono.<br><span></span>El movimiento como energía se manifiesta en cada nivel u octava de vibración (dimensión); todo lo que se manifiesta, es decir, que cobra presencia (objetiva o subjetiva) se puede medir y viceversa.<br><span></span>La manifestación de la energía en todos los planos, implica vencer o enfrentar los obstáculos inherentes al plano dimensional y al tipo de presencia a manifestarse. Las manos juntas, la dualidad de las manos (5+5=10), equilibrándose mutuamente, como flecha al objetivo.', 'Lajun', 'Energia_10'),
 (11, 'Julajuj', 'Compartir, Separar, Las Posibilidades, Dejarse-abandonarse', 'Principio de las Estructuras disonantes.<br><span></span>Liberación, Divulgar, Disolver.<br><span></span>Todas las estructuras, cualquiera sea su naturaleza, tienden a ingresar a nuevas realidades; el movimiento perpetuo implica mutación y cambio constante, en la vida vamos haciendo conscientes estas nuevas realidades.<br><span></span>Las estructuras que se \"desordenan\" como un aparente caos para el mundo material, en realidad están ingresando a otro orden superior no comprensible desde la tridimensional. La grieta que nos escinde del todo es la no evolución, nuestra tendencia a quedarnos resguardados donde nos sentimos cómodos y seguros es un espejismo; un orden superior que hoy asimilamos como caos esta a la espera de nuestro ingreso, es la quinta dimensión que trasciende a las anteriores', 'Buluk', 'Energia_11'),
 (12, 'Kab\'lajuj', 'La Familia, La Comunidad, Los Grupos, La Seguridad', 'Principio de la Estabilidad compleja: 2x6.<br><span></span>Cooperación, Universalizar, Dedicación.<br><span></span>Es la polarización del equilibrio orgánico, mediante el cual cada especie gana su propio nivel de frecuencia armónica, es decir, su estatuto como especie: código, nicho, hábitat, etc. Genera las fuerzas conservacionistas de los organismos vivos, incluida la tierra, como cooperación simbiotica.', 'Kaalajun', 'Energia_12'),
-(13, 'Oxlajuj\'', 'La Magia, EL Poder del Camino, La Teurgia, El Trasmutar', 'Principio del movimiento universal o principio de vibración.<br><span></span>Presencia, Trascender, Perdurar.<br><span></span>Todo cuanto existe esta en perpetuo movimiento, desde lo mas sutil con las vibraciones, hasta lo mas denso y pesado como expresión de las bajas frecuencias, a tal punto que estos extremos parecen en reposo. <br><span></span>El movimiento es la energía que fluye desde la fuente y regresa a ella. Este principio otorga trascendencia a todo lo que funciona con y obedece a la ley del uno, trascendencia es la cualidad de perdurar mas allá del tiempo y del espacio. La unión total de todos los números anteriores, el ultimo numero representa el conocimiento interno, la introspección, centralidad y transparencia, Sabiduría del Universo, La Madre Tierra, respeto a lo que existe, florece y da frutos.', 'Oxlajun', 'Energia_13');
+(13, 'Oxlajuj’', 'La Magia, EL Poder del Camino, La Teurgia, El Trasmutar', 'Principio del movimiento universal o principio de vibración.<br><span></span>Presencia, Trascender, Perdurar.<br><span></span>Todo cuanto existe esta en perpetuo movimiento, desde lo mas sutil con las vibraciones, hasta lo mas denso y pesado como expresión de las bajas frecuencias, a tal punto que estos extremos parecen en reposo. <br><span></span>El movimiento es la energía que fluye desde la fuente y regresa a ella. Este principio otorga trascendencia a todo lo que funciona con y obedece a la ley del uno, trascendencia es la cualidad de perdurar mas allá del tiempo y del espacio. La unión total de todos los números anteriores, el ultimo numero representa el conocimiento interno, la introspección, centralidad y transparencia, Sabiduría del Universo, La Madre Tierra, respeto a lo que existe, florece y da frutos.', 'Oxlajun', 'Energia_13');
 
-UPDATE energia SET imagen = '../img/energia/Jun.png' WHERE id = 1;
-UPDATE energia SET imagen = '../img/energia/Keb\'.png' WHERE id = 2;
-UPDATE energia SET imagen = '../img/energia/Oxib\'.png' WHERE id = 3;
-UPDATE energia SET imagen = '../img/energia/Kajib\'.png' WHERE id = 4;
-UPDATE energia SET imagen = '../img/energia/Job\'.png' WHERE id = 5;
-UPDATE energia SET imagen = '../img/energia/Waqib\'.png' WHERE id = 6;
-UPDATE energia SET imagen = '../img/energia/Wuqub\'.png' WHERE id = 7;
-UPDATE energia SET imagen = '../img/energia/Wajxaqib\'.png' WHERE id = 8;
-UPDATE energia SET imagen = '../img/energia/B\'elejeb\'.png' WHERE id = 9;
-UPDATE energia SET imagen = '../img/energia/Lajuj.png' WHERE id = 10;
-UPDATE energia SET imagen = '../img/energia/Julajuj.png' WHERE id = 11;
-UPDATE energia SET imagen = '../img/energia/Kab\'lajuj.png' WHERE id = 12;
-UPDATE energia SET imagen = '../img/energia/Oxlajuj\'.png' WHERE id = 13;
 
 --
 -- Volcado de datos para la tabla `kin`
@@ -143,7 +130,7 @@ INSERT INTO `kin` (`id`, `iddesk`, `nombre`, `significado`, `htmlCodigo`, `categ
 (9, 10, 'Ok', 'El perro', 'Es la energía del amor incondicional. El Perro representa la fidelidad, la lealtad y el compañerismo, es el guardián de sus seres queridos. En sombra tiene problemas de autoestima, dando siempre demás a quienes no le corresponden y exigiendo en consecuencia. En luz es capaz del máximo altruismo, sabiéndose amar a sí mismo primero, poniendo límites sanos a todo lo que no le haga bien en sus relaciones afectivas y amando sin aprehensión. Tenderá a dedicarse de alguna u otra manera a proyectos sociales, a hacer el bien por la humanidad. En este sentido tendría que tener cuidado con inconscientemente actuar como el salvador de los demás.', 'Kin_9', 'Oc'),
 (10, 11, 'Chuwen', 'El mono', 'Es el niño interior que con su sabiduría ilumina la vida de los demás. En luz es el sentido del humor, lo lúdico, la irreverencia que cuestiona todo como jugando. En sombra suele tender a tomarse todo demasiado en serio y actuar como el abogado defensor de las causas justas. No se permite relajarse y guarda situaciones de la infancia por resolver. Su misión será mostrarle al mundo que nada es tan sólido como parece y que a veces es necesario confrontarnos desde la risa para lograr soltar el ego.', 'Kin_10', 'Chuen'),
 (11, 12, 'Eb\'', 'El humano', 'Representa el más alto estándar de integridad. Es el sabio que defiende las causas justas, habitualmente sacrificándose en el proceso. En luz está en conexión profunda con su libertad y sabrá equilibrar su gran necesidad de generar armonía alrededor suyo con el camino que quiera elegir. En sombra, se pospondrá por el resto o caerá en la indecisión aguda de no saber qué decisiones tomar, por tener un concepto rígido del deber ser.', 'Kin_11', 'Eb'),
-(12, 13, 'B\'en', 'El caminante del cielo', 'Es el explorador, el buscador del sentido último de la existencia. Su principal motivación es conocer, conocerlo todo, sobre todo otras culturas, otros territorios, otros saberes, otras idiosincrasias. En luz, sabrá dejarse guiar por su intuición y todo lo que conozca logrará transformarlo, para luego compartirlo con el mundo. En sombra, el escepticismo le jugará malas pasadas, y solo buscará que conocer hacia fuera, sin tener el coraje de viajar dentro suyo ni de encontrar un camino espiritual.', 'Kin_12', 'Ben'),
+(12, 13, 'B\'en ', 'El caminante del cielo', 'Es el explorador, el buscador del sentido último de la existencia. Su principal motivación es conocer, conocerlo todo, sobre todo otras culturas, otros territorios, otros saberes, otras idiosincrasias. En luz, sabrá dejarse guiar por su intuición y todo lo que conozca logrará transformarlo, para luego compartirlo con el mundo. En sombra, el escepticismo le jugará malas pasadas, y solo buscará que conocer hacia fuera, sin tener el coraje de viajar dentro suyo ni de encontrar un camino espiritual.', 'Kin_12', 'Ben'),
 (13, 14, 'Ix', 'El mago', 'Es el que con su encanto natural logra transformarlo todo. Artista, performer, alquimista, sanador, brujo, ingeniero, consejero, orador. En luz, podrá cumplir con su misión de ser fuente de inspiración para los seres humanos, en sombra la soberbia lo llevará a preocuparse solo por la valoración externa, por los aplausos.', 'Kin_13', 'Ix'),
 (14, 15, 'Men', 'El aguila', 'Representa la visión panorámica, la agudeza analítica y la creatividad de vanguardia. Es visionaria y muy profunda, sintiéndose siempre responsable del bienestar ajeno. En luz logrará creer en sí misma para emprender el vuelo y evolucionar, en sombra se quedará procastinando distrayéndose con todo lo que su mente es capaz de vislumbrar, y poniendo el bien común adelante de sus prioridades como pretexto.', 'Kin_14', 'Men'),
 (15, 16, 'Kib\'', 'El guerrero', 'Es el samurai, el que con disciplina y entrega se entrena para ir a la batalla a ganar. Pero la batalla no es el conflicto, es la posibilidad de transformar la realidad, aquello que es injusto, de manera estratégica, intrépida, frontal y sobre todo humilde. Un Guerrero en sombra lo cuestiona todo solo por ego, incluso a sí mismo, autoboicoteándose. En luz es el maestro espiritual, perfil bajo, que ilumina con sus acciones.', 'Kin_15', 'Cib'),
@@ -152,26 +139,6 @@ INSERT INTO `kin` (`id`, `iddesk`, `nombre`, `significado`, `htmlCodigo`, `categ
 (18, 19, 'Kawak', 'La tormenta', 'Es la fuerza transformadora de la realidad. Cuando aparece la tormenta es momento de cambios radicales, no hay de otra. En general es una energía poderosa de creación, suele pasar perfil bajo pero cuando llega el momento se manifiesta con una gran fiereza. En sombra se estacan y no se permiten cambiar, o al revés, generan cierta adicción a los movimientos fuertes permanentes. Pueden también quedarse en la extrema introspección, son muy sensibles, y no mostrarse. En luz logran generar situaciones límites para dejar ir aquello que ya le tocaba irse y poder volver a empezar en un nuevo nivel de evolución.', 'Kin_18', 'Cauac'),
 (19, 20, 'Ajaw', 'El sol', 'Es la energía de mayor evolución. Representa la luz generadora de vida, la sabiduría, la verdad, las cosas tal y como son. Cuando aparece el Sol es momento de brillar, de confiar en quienes ya somos y en lo que ya sabemos de manera intrínseca, y asumir los roles de autoridad, de liderazgo que nos correspondan. Es momento de afrontar la realidad como se presente, así nos cueste. El problema con el Sol es que al ser la verdad puede tornarse intransigente, radical con la ética, con los paradigmas, con lo que considera correcto o cierto, así, debe trabajar por sobre todas las cosas la humildad. La verdadera sabiduría no se anda mostrando, defendiendo o convenciendo, es un estado del alma, de conexión permanente con nuestro ser auténtico.', 'Kin_19', 'Ahau');
 
-UPDATE kin SET imagen = '../img/kin/Imix\'.png' WHERE id = 0;
-UPDATE kin SET imagen = '../img/kin/Ik\'.png' WHERE id = 1;
-UPDATE kin SET imagen = '../img/kin/Ak\'bal\'.png' WHERE id = 2;
-UPDATE kin SET imagen = '../img/kin/K\'an.png' WHERE id = 3;
-UPDATE kin SET imagen = '../img/kin/Chikchan.png' WHERE id = 4;
-UPDATE kin SET imagen = '../img/kin/Kimi.png' WHERE id = 5;
-UPDATE kin SET imagen = '../img/kin/Manik\'.png' WHERE id = 6;
-UPDATE kin SET imagen = '../img/kin/Lamat.png' WHERE id = 7;
-UPDATE kin SET imagen = '../img/kin/Muluk.png' WHERE id = 8;
-UPDATE kin SET imagen = '../img/kin/Ok.png' WHERE id = 9;
-UPDATE kin SET imagen = '../img/kin/Chuwen.png' WHERE id = 10;
-UPDATE kin SET imagen = '../img/kin/Eb\'.png' WHERE id = 11;
-UPDATE kin SET imagen = '../img/kin/B\'en.png' WHERE id = 12;
-UPDATE kin SET imagen = '../img/kin/Ix.png' WHERE id = 13;
-UPDATE kin SET imagen = '../img/kin/Men.png' WHERE id = 14;
-UPDATE kin SET imagen = '../img/kin/Kib\'.png' WHERE id = 15;
-UPDATE kin SET imagen = '../img/kin/Kab\'an.png' WHERE id = 16;
-UPDATE kin SET imagen = '../img/kin/Etz\'anab\'.png' WHERE id = 17;
-UPDATE kin SET imagen = '../img/kin/Kawak.png' WHERE id = 18;
-UPDATE kin SET imagen = '../img/kin/Ajaw.png' WHERE id = 19;
 
 --
 -- Volcado de datos para la tabla `nahual`
@@ -199,26 +166,6 @@ INSERT INTO `nahual` (`idweb`, `iddesk`, `nombre`, `nombreYucateco`, `significad
 (18, 13, 'Aj', NULL, 'Caña o cañaveral', '<p>\r\n    <strong>Características:</strong>\r\n    Simboliza caña veral y milpa. Todo lo que se relaciona al hogar y la familia. Es el símbolo que dejó Jun Ajpu Ixb’alamkej de su vida,\r\n    cuando sembró la caña en medio del patio de la casa de la abuela Ixmukane. Aj es símbolo de la resurrección de Jun Ajpu e Ixb’alamkej,\r\n    quienes no murieron en manos de los señores de Xib’alb’a. Es el triunfo del bien sobre el mal.\r\n  </p>\r\n  <p>\r\n    Es el destino representado por el Nawal o los Nawales. 8 Aj es el día en el cual se establece el destino de uno, para llamarlo y reconocerlo.\r\n  </p>\r\n  <p>\r\n    también es elote, maíz tierno.  Día relacionado con todo lo que concierne a los niños.\r\n    Es día bueno y sobre todo para rezar por las criaturas.\r\n  </p>\r\n  <p>\r\n    También es el día de la enfermedad debilidad en el tejido óseo, pero de mucha energía espiritual.\r\n    Es el hogar, la casa, todo lo que se relaciona con la casa. Los que nacen en Aj pueden ser sacerdotes mayas.\r\n  </p>\r\n  <p>\r\n    <strong>Función Espiritual:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> El hogar y la familia de todas las generaciones tiernas; 8 Aj se celebra el día del niño.</li>\r\n    <li> El bastón del poder de las virtudes divinas, sensatez, la palabra sagrada.</li>\r\n    <li> Caña, símbolo que dejó Jun Ajpu Ixbalanke de su vida, cuando sembró la caña en el patio, dueño del Hogar, y ternura.</li>\r\n    <li> Nawal de las artes.</li>\r\n  </ul>\r\n  <p><strong>Significado Clave:</strong> La integridad de la fe</p>\r\n  <p>\r\n    <strong>Fortalezas:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Autoridad</li>\r\n    <li> Inteligente</li>\r\n    <li> Estricto</li>\r\n    <li> Es respetado por sus amigos</li>\r\n    <li> Principios sólidos en el terreno moral y ético</li>\r\n    <li> Atraído por la religión o los estudios filosóficos y teológicos</li>\r\n    <li> Trabajador</li>\r\n    <li> Bromista</li>\r\n  </ul>\r\n  <p>\r\n    <strong>Debilidades:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Regaña</li>\r\n    <li> Celoso</li>\r\n    <li> Nervioso</li>\r\n    <li> Expuesto  a discutir y  juzgar</li>\r\n    <li> Hace lo que le plazca</li>\r\n    <li> Extremista, no es de moderación</li>\r\n    <li> Hace bromas pesadas</li>\r\n    <li> No es constante en la fe</li>\r\n    <li> Variable</li>\r\n    <li> Sufre con frecuencia, se enferma en la niñez</li>\r\n    <li> Alcohólico</li>\r\n    <li> Destructor</li>\r\n    <li> Una vida variable, de dolor</li>\r\n    <li> tristeza y alegría</li>\r\n  </ul>', 'Nahual_18', 'Es el Nawal de la casa y de los niños, día propicio para el hogar y la salud de los niños.\nNawal de las generaciones tiernas.\nPersonas que no pueden negarse ante otros.', 'src/imagenesNahuales/13.jpg'),
 (19, 14, 'I\'x', NULL, 'Jaguar', '<p>\r\n    <strong>Características:</strong>\r\n    Es el símbolo y energía de la Madre Tierra. Representa los lugares o centros ceremoniales donde se llevan a cabo las ceremonias.\r\n    Son los cerros, las montañas, las planicies. Significa Jaguar.\r\n  </p>\r\n  <p>\r\n    Representa el altar maya o sea el tab’al. Es un día especial para pedir la vida de los animales tanto domésticos como salvajes.\r\n    Se le pide a Ajaw una buena cosecha de cualquier cultivo, en especial el de las verduras.\r\n    En este día se encienden candelas de color verde, ya que simbolizan el color de la Madre Tierra.\r\n  </p>\r\n  <p>\r\n    Representa el altar maya o sea el tab’al. Es un día especial para pedir la vida de los animales tanto domésticos como salvajes.\r\n    Se le pide a Ajaw una buena cosecha de cualquier cultivo, en especial el de las verduras. En este día se encienden\r\n    candelas de color verde, ya que simbolizan el color de la Madre Tierra.\r\n  </p>\r\n  <p>\r\n    <strong>Función Espiritual:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Propicia energía espiritual y física.</li>\r\n    <li> Invocación por la lluvia.</li>\r\n    <li> Invocación por la vida de los animales.</li>\r\n    <li> Día de invocación por la salud de toda la humanidad.</li>\r\n    <li> Día para realizar invocaciones para que las siembras estén protegidas de los animales.</li>\r\n  </ul>\r\n  <p><strong>Su origen:</strong> Keme <strong>destino:</strong> Iq\'</p>\r\n  <p>\r\n    <strong>Fortalezas:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Es paciente, fuerte, responsable, valiente, respetuoso, vigoroso y atrevido.</li>\r\n    <li> Es decisivo y realista.</li>\r\n    <li> Es de buen corazón.</li>\r\n    <li> Buen padre de familia.</li>\r\n    <li> Puede ser líder y famoso si sabe encauzar sus energías.</li>\r\n  </ul>\r\n  <p>\r\n    <strong>Debilidades:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Puede llegar a tener un carácter fuerte.</li>\r\n    <li> Algunas veces se enoja y se impacienta.</li>\r\n    <li> Su carácter le puede hacer prepotente, orgulloso, colérico, serio y vengativo.</li>\r\n  </ul>', 'Nahual_19', 'Es el Nawal de la naturaleza y los altares mayas, día para pedir fortaleza física y mental.\nEs el Nawal de las siete vergüenzas humanas: orgullo, ambición, envidia, mentira, crimen, ingratitud, ignorancia por pereza.\nPersonas de razonamiento interno a las que les gusta la naturaleza y la soledad.', 'src/imagenesNahuales/14.jpg');
 
-UPDATE nahual SET imagen = '../img/nahual/Tzikin.png' WHERE idweb = 0;
-UPDATE nahual SET imagen = '../img/nahual/Ajmaq.png' WHERE idweb = 1;
-UPDATE nahual SET imagen = '../img/nahual/No\'j.png' WHERE idweb = 2;
-UPDATE nahual SET imagen = '../img/nahual/Tijax.png' WHERE idweb = 3;
-UPDATE nahual SET imagen = '../img/nahual/Kawoq.png' WHERE idweb = 4;
-UPDATE nahual SET imagen = '../img/nahual/Ajpu.png' WHERE idweb = 5;
-UPDATE nahual SET imagen = '../img/nahual/Imox.png' WHERE idweb = 6;
-UPDATE nahual SET imagen = '../img/nahual/Iq\'.png' WHERE idweb = 7;
-UPDATE nahual SET imagen = '../img/nahual/Aq\'ab\'al.png' WHERE idweb = 8;
-UPDATE nahual SET imagen = '../img/nahual/K\'at.png' WHERE idweb = 9;
-UPDATE nahual SET imagen = '../img/nahual/Kan.png' WHERE idweb = 10;
-UPDATE nahual SET imagen = '../img/nahual/Kame.png' WHERE idweb = 11;
-UPDATE nahual SET imagen = '../img/nahual/Kej.png' WHERE idweb = 12;
-UPDATE nahual SET imagen = '../img/nahual/Q\'anil.png' WHERE idweb = 13;
-UPDATE nahual SET imagen = '../img/nahual/Toj.png' WHERE idweb = 14;
-UPDATE nahual SET imagen = '../img/nahual/Tz\'i\'.png' WHERE idweb = 15;
-UPDATE nahual SET imagen = '../img/nahual/B\'atz\'.png' WHERE idweb = 16;
-UPDATE nahual SET imagen = '../img/nahual/E\'.png' WHERE idweb = 17;
-UPDATE nahual SET imagen = '../img/nahual/Aj.png' WHERE idweb = 18;
-UPDATE nahual SET imagen = '../img/nahual/I\'x.png' WHERE idweb = 19;
 
 --
 -- Volcado de datos para la tabla `pagina`
@@ -260,25 +207,5 @@ INSERT INTO `uinal` (`idweb`, `nombre`, `significado`, `dias`, `htmlCodigo`, `ca
 (16, 'Pax', 'Tiempo de siembra, tambor, musica', 20, '<p>En este mes la ceremonia se llamaba<strong> pacum chac</strong>, y por un período de cinco noches se juntaban los señores <em>(batab)</em> y los sacerdotes (ah kin) de los pueblos menores <em>(batabil)</em>, en las capitales y veneraban a <strong>Cit chac cob</strong>. Se homenajeaba con copal al jefe de los guerreros <em>(nacom)</em> durante cinco días, realizaban un baile de los guerreros llamado <strong>HOLKANAKOT</strong>. El sentido de esta ceremonia era para pedir a sus dioses alcanzar la victoria frente a sus enemigos. Se sacrificaba un perro, al cual se le extraía el corazón, se rompían ollas grandes que contenían bebida, y daban por finalizada la ceremonia, regresando a sus pueblos.</p>', 'Uinal_16', 15, 'src/imagenesWinales/16.png'),
 (17, 'K\'ayab\'', 'Tortuga, guacamaya', 20, '<p>Durante los meses <strong>kayab </strong>y <strong>Kumku </strong>en cada población hacían fiestas a las cuales llamaban <strong>zabacilthan</strong>, se reunían para presentar ofrendas, comer y beber preparándose para el <strong><em>uayeb</em></strong>, el mes corto de los cinco días nefastos. </p>', 'Uinal_17', 16, 'src/imagenesWinales/17.png'),
 (18, 'K\'umk\'u\'', 'Maiz maduro, granero, oscuridad', 20, '<p>Durante los meses <strong>kayab </strong>y <strong>Kumku </strong>en cada población hacían fiestas a las cuales llamaban <strong>zabacilthan</strong>, se reunían para presentar ofrendas, comer y beber preparándose para el <strong><em>uayeb</em></strong>, el mes corto de los cinco días nefastos. </p>', 'Uinal_18', 17, 'src/imagenesWinales/18.png');
-
-UPDATE uinal SET imagen = '../img/uinal/Wayeb\'.png' WHERE idweb = 0;
-UPDATE uinal SET imagen = '../img/uinal/Pop.png' WHERE idweb = 1;
-UPDATE uinal SET imagen = '../img/uinal/Woo.png' WHERE idweb = 2;
-UPDATE uinal SET imagen = '../img/uinal/Zip.png' WHERE idweb = 3;
-UPDATE uinal SET imagen = '../img/uinal/Sotz\'.png' WHERE idweb = 4;
-UPDATE uinal SET imagen = '../img/uinal/Tzek.png' WHERE idweb = 5;
-UPDATE uinal SET imagen = '../img/uinal/xul.png' WHERE idweb = 6;
-UPDATE uinal SET imagen = '../img/uinal/Yaxk\'in.png' WHERE idweb = 7;
-UPDATE uinal SET imagen = '../img/uinal/Mol.png' WHERE idweb = 8;
-UPDATE uinal SET imagen = '../img/uinal/Ch\'en.png' WHERE idweb = 9;
-UPDATE uinal SET imagen = '../img/uinal/Yax.png' WHERE idweb = 10;
-UPDATE uinal SET imagen = '../img/uinal/Sak.png' WHERE idweb = 11;
-UPDATE uinal SET imagen = '../img/uinal/keh.png' WHERE idweb = 12;
-UPDATE uinal SET imagen = '../img/uinal/Mak.png' WHERE idweb = 13;
-UPDATE uinal SET imagen = '../img/uinal/K\'ank\'in.png' WHERE idweb = 14;
-UPDATE uinal SET imagen = '../img/uinal/Muwan.png' WHERE idweb = 15;
-UPDATE uinal SET imagen = '../img/uinal/Pax.png' WHERE idweb = 16;
-UPDATE uinal SET imagen = '../img/uinal/K\'ayab\'.png' WHERE idweb = 17;
-UPDATE uinal SET imagen = '../img/uinal/K\'umk\'u\'.png' WHERE idweb = 18;
 
 COMMIT;
