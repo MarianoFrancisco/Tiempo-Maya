@@ -143,22 +143,21 @@ INSERT INTO `energia` (`id`, `nombre`, `significado`, `htmlCodigo`, `nombreYucat
 (10, 'Lajuj', 'La Ley, La Autoridad, La Rectitud, La Impecabilidad', 'Principio de la Manifestación.<br><span></span>Manifestar, Producir, Perfecciono.<br><span></span>El movimiento como energía se manifiesta en cada nivel u octava de vibración (dimensión); todo lo que se manifiesta, es decir, que cobra presencia (objetiva o subjetiva) se puede medir y viceversa.<br><span></span>La manifestación de la energía en todos los planos, implica vencer o enfrentar los obstáculos inherentes al plano dimensional y al tipo de presencia a manifestarse. Las manos juntas, la dualidad de las manos (5+5=10), equilibrándose mutuamente, como flecha al objetivo.', 'Lajun', 'Energia_10'),
 (11, 'Julajuj', 'Compartir, Separar, Las Posibilidades, Dejarse-abandonarse', 'Principio de las Estructuras disonantes.<br><span></span>Liberación, Divulgar, Disolver.<br><span></span>Todas las estructuras, cualquiera sea su naturaleza, tienden a ingresar a nuevas realidades; el movimiento perpetuo implica mutación y cambio constante, en la vida vamos haciendo conscientes estas nuevas realidades.<br><span></span>Las estructuras que se \"desordenan\" como un aparente caos para el mundo material, en realidad están ingresando a otro orden superior no comprensible desde la tridimensional. La grieta que nos escinde del todo es la no evolución, nuestra tendencia a quedarnos resguardados donde nos sentimos cómodos y seguros es un espejismo; un orden superior que hoy asimilamos como caos esta a la espera de nuestro ingreso, es la quinta dimensión que trasciende a las anteriores', 'Buluk', 'Energia_11'),
 (12, 'Kab\'lajuj', 'La Familia, La Comunidad, Los Grupos, La Seguridad', 'Principio de la Estabilidad compleja: 2x6.<br><span></span>Cooperación, Universalizar, Dedicación.<br><span></span>Es la polarización del equilibrio orgánico, mediante el cual cada especie gana su propio nivel de frecuencia armónica, es decir, su estatuto como especie: código, nicho, hábitat, etc. Genera las fuerzas conservacionistas de los organismos vivos, incluida la tierra, como cooperación simbiotica.', 'Kaalajun', 'Energia_12'),
-(13, 'Oxlajuj’', 'La Magia, EL Poder del Camino, La Teurgia, El Trasmutar', 'Principio del movimiento universal o principio de vibración.<br><span></span>Presencia, Trascender, Perdurar.<br><span></span>Todo cuanto existe esta en perpetuo movimiento, desde lo mas sutil con las vibraciones, hasta lo mas denso y pesado como expresión de las bajas frecuencias, a tal punto que estos extremos parecen en reposo. <br><span></span>El movimiento es la energía que fluye desde la fuente y regresa a ella. Este principio otorga trascendencia a todo lo que funciona con y obedece a la ley del uno, trascendencia es la cualidad de perdurar mas allá del tiempo y del espacio. La unión total de todos los números anteriores, el ultimo numero representa el conocimiento interno, la introspección, centralidad y transparencia, Sabiduría del Universo, La Madre Tierra, respeto a lo que existe, florece y da frutos.', 'Oxlajun', 'Energia_13');
+(13, 'Oxlajuj\'', 'La Magia, EL Poder del Camino, La Teurgia, El Trasmutar', 'Principio del movimiento universal o principio de vibración.<br><span></span>Presencia, Trascender, Perdurar.<br><span></span>Todo cuanto existe esta en perpetuo movimiento, desde lo mas sutil con las vibraciones, hasta lo mas denso y pesado como expresión de las bajas frecuencias, a tal punto que estos extremos parecen en reposo. <br><span></span>El movimiento es la energía que fluye desde la fuente y regresa a ella. Este principio otorga trascendencia a todo lo que funciona con y obedece a la ley del uno, trascendencia es la cualidad de perdurar mas allá del tiempo y del espacio. La unión total de todos los números anteriores, el ultimo numero representa el conocimiento interno, la introspección, centralidad y transparencia, Sabiduría del Universo, La Madre Tierra, respeto a lo que existe, florece y da frutos.', 'Oxlajun', 'Energia_13');
 
-UPDATE energia SET imagen = '../img/energias/0.png' WHERE id = 0;
-UPDATE energia SET imagen = '../img/energias/1.png' WHERE id = 1;
-UPDATE energia SET imagen = '../img/energias/2.png' WHERE id = 2;
-UPDATE energia SET imagen = '../img/energias/3.png' WHERE id = 3;
-UPDATE energia SET imagen = '../img/energias/4.png' WHERE id = 4;
-UPDATE energia SET imagen = '../img/energias/5.png' WHERE id = 5;
-UPDATE energia SET imagen = '../img/energias/6.png' WHERE id = 6;
-UPDATE energia SET imagen = '../img/energias/7.png' WHERE id = 7;
-UPDATE energia SET imagen = '../img/energias/8.png' WHERE id = 8;
-UPDATE energia SET imagen = '../img/energias/9.png' WHERE id = 9;
-UPDATE energia SET imagen = '../img/energias/10.png' WHERE id = 10;
-UPDATE energia SET imagen = '../img/energias/11.png' WHERE id = 11;
-UPDATE energia SET imagen = '../img/energias/12.png' WHERE id = 12;
-UPDATE energia SET imagen = '../img/energias/13.png' WHERE id = 13;
+UPDATE energia SET imagen = '../img/energia/Jun.png' WHERE id = 1;
+UPDATE energia SET imagen = '../img/energia/Keb\'.png' WHERE id = 2;
+UPDATE energia SET imagen = '../img/energia/Oxib\'.png' WHERE id = 3;
+UPDATE energia SET imagen = '../img/energia/Kajib\'.png' WHERE id = 4;
+UPDATE energia SET imagen = '../img/energia/Job\'.png' WHERE id = 5;
+UPDATE energia SET imagen = '../img/energia/Waqib\'.png' WHERE id = 6;
+UPDATE energia SET imagen = '../img/energia/Wuqub\'.png' WHERE id = 7;
+UPDATE energia SET imagen = '../img/energia/Wajxaqib\'.png' WHERE id = 8;
+UPDATE energia SET imagen = '../img/energia/B\'elejeb\'.png' WHERE id = 9;
+UPDATE energia SET imagen = '../img/energia/Lajuj.png' WHERE id = 10;
+UPDATE energia SET imagen = '../img/energia/Julajuj.png' WHERE id = 11;
+UPDATE energia SET imagen = '../img/energia/Kab\'lajuj.png' WHERE id = 12;
+UPDATE energia SET imagen = '../img/energia/Oxlajuj\'.png' WHERE id = 13;
 -- --------------------------------------------------------
 
 --
@@ -195,7 +194,7 @@ INSERT INTO `kin` (`id`, `iddesk`, `nombre`, `significado`, `htmlCodigo`, `categ
 (9, 10, 'Ok', 'El perro', 'Es la energía del amor incondicional. El Perro representa la fidelidad, la lealtad y el compañerismo, es el guardián de sus seres queridos. En sombra tiene problemas de autoestima, dando siempre demás a quienes no le corresponden y exigiendo en consecuencia. En luz es capaz del máximo altruismo, sabiéndose amar a sí mismo primero, poniendo límites sanos a todo lo que no le haga bien en sus relaciones afectivas y amando sin aprehensión. Tenderá a dedicarse de alguna u otra manera a proyectos sociales, a hacer el bien por la humanidad. En este sentido tendría que tener cuidado con inconscientemente actuar como el salvador de los demás.', 'Kin_9', 'Oc'),
 (10, 11, 'Chuwen', 'El mono', 'Es el niño interior que con su sabiduría ilumina la vida de los demás. En luz es el sentido del humor, lo lúdico, la irreverencia que cuestiona todo como jugando. En sombra suele tender a tomarse todo demasiado en serio y actuar como el abogado defensor de las causas justas. No se permite relajarse y guarda situaciones de la infancia por resolver. Su misión será mostrarle al mundo que nada es tan sólido como parece y que a veces es necesario confrontarnos desde la risa para lograr soltar el ego.', 'Kin_10', 'Chuen'),
 (11, 12, 'Eb\'', 'El humano', 'Representa el más alto estándar de integridad. Es el sabio que defiende las causas justas, habitualmente sacrificándose en el proceso. En luz está en conexión profunda con su libertad y sabrá equilibrar su gran necesidad de generar armonía alrededor suyo con el camino que quiera elegir. En sombra, se pospondrá por el resto o caerá en la indecisión aguda de no saber qué decisiones tomar, por tener un concepto rígido del deber ser.', 'Kin_11', 'Eb'),
-(12, 13, 'B\'en ', 'El caminante del cielo', 'Es el explorador, el buscador del sentido último de la existencia. Su principal motivación es conocer, conocerlo todo, sobre todo otras culturas, otros territorios, otros saberes, otras idiosincrasias. En luz, sabrá dejarse guiar por su intuición y todo lo que conozca logrará transformarlo, para luego compartirlo con el mundo. En sombra, el escepticismo le jugará malas pasadas, y solo buscará que conocer hacia fuera, sin tener el coraje de viajar dentro suyo ni de encontrar un camino espiritual.', 'Kin_12', 'Ben'),
+(12, 13, 'B\'en', 'El caminante del cielo', 'Es el explorador, el buscador del sentido último de la existencia. Su principal motivación es conocer, conocerlo todo, sobre todo otras culturas, otros territorios, otros saberes, otras idiosincrasias. En luz, sabrá dejarse guiar por su intuición y todo lo que conozca logrará transformarlo, para luego compartirlo con el mundo. En sombra, el escepticismo le jugará malas pasadas, y solo buscará que conocer hacia fuera, sin tener el coraje de viajar dentro suyo ni de encontrar un camino espiritual.', 'Kin_12', 'Ben'),
 (13, 14, 'Ix', 'El mago', 'Es el que con su encanto natural logra transformarlo todo. Artista, performer, alquimista, sanador, brujo, ingeniero, consejero, orador. En luz, podrá cumplir con su misión de ser fuente de inspiración para los seres humanos, en sombra la soberbia lo llevará a preocuparse solo por la valoración externa, por los aplausos.', 'Kin_13', 'Ix'),
 (14, 15, 'Men', 'El aguila', 'Representa la visión panorámica, la agudeza analítica y la creatividad de vanguardia. Es visionaria y muy profunda, sintiéndose siempre responsable del bienestar ajeno. En luz logrará creer en sí misma para emprender el vuelo y evolucionar, en sombra se quedará procastinando distrayéndose con todo lo que su mente es capaz de vislumbrar, y poniendo el bien común adelante de sus prioridades como pretexto.', 'Kin_14', 'Men'),
 (15, 16, 'Kib\'', 'El guerrero', 'Es el samurai, el que con disciplina y entrega se entrena para ir a la batalla a ganar. Pero la batalla no es el conflicto, es la posibilidad de transformar la realidad, aquello que es injusto, de manera estratégica, intrépida, frontal y sobre todo humilde. Un Guerrero en sombra lo cuestiona todo solo por ego, incluso a sí mismo, autoboicoteándose. En luz es el maestro espiritual, perfil bajo, que ilumina con sus acciones.', 'Kin_15', 'Cib'),
@@ -204,26 +203,26 @@ INSERT INTO `kin` (`id`, `iddesk`, `nombre`, `significado`, `htmlCodigo`, `categ
 (18, 19, 'Kawak', 'La tormenta', 'Es la fuerza transformadora de la realidad. Cuando aparece la tormenta es momento de cambios radicales, no hay de otra. En general es una energía poderosa de creación, suele pasar perfil bajo pero cuando llega el momento se manifiesta con una gran fiereza. En sombra se estacan y no se permiten cambiar, o al revés, generan cierta adicción a los movimientos fuertes permanentes. Pueden también quedarse en la extrema introspección, son muy sensibles, y no mostrarse. En luz logran generar situaciones límites para dejar ir aquello que ya le tocaba irse y poder volver a empezar en un nuevo nivel de evolución.', 'Kin_18', 'Cauac'),
 (19, 20, 'Ajaw', 'El sol', 'Es la energía de mayor evolución. Representa la luz generadora de vida, la sabiduría, la verdad, las cosas tal y como son. Cuando aparece el Sol es momento de brillar, de confiar en quienes ya somos y en lo que ya sabemos de manera intrínseca, y asumir los roles de autoridad, de liderazgo que nos correspondan. Es momento de afrontar la realidad como se presente, así nos cueste. El problema con el Sol es que al ser la verdad puede tornarse intransigente, radical con la ética, con los paradigmas, con lo que considera correcto o cierto, así, debe trabajar por sobre todas las cosas la humildad. La verdadera sabiduría no se anda mostrando, defendiendo o convenciendo, es un estado del alma, de conexión permanente con nuestro ser auténtico.', 'Kin_19', 'Ahau');
 
-UPDATE kin SET imagen = '../img/kin/imix.png' WHERE id = 0;
-UPDATE kin SET imagen = '../img/kin/ik.png' WHERE id = 1;
-UPDATE kin SET imagen = '../img/kin/akbal.png' WHERE id = 2;
-UPDATE kin SET imagen = '../img/kin/kan.png' WHERE id = 3;
-UPDATE kin SET imagen = '../img/kin/imix.png' WHERE id = 4;
-UPDATE kin SET imagen = '../img/kin/kimi.png' WHERE id = 5;
-UPDATE kin SET imagen = '../img/kin/manik.png' WHERE id = 6;
-UPDATE kin SET imagen = '../img/kin/lamat.png' WHERE id = 7;
-UPDATE kin SET imagen = '../img/kin/muluk.png' WHERE id = 8;
-UPDATE kin SET imagen = '../img/kin/ok.png' WHERE id = 9;
-UPDATE kin SET imagen = '../img/kin/chuwen.png' WHERE id = 10;
-UPDATE kin SET imagen = '../img/kin/eb.png' WHERE id = 11;
-UPDATE kin SET imagen = '../img/kin/ben.png' WHERE id = 12;
-UPDATE kin SET imagen = '../img/kin/ix.png' WHERE id = 13;
-UPDATE kin SET imagen = '../img/kin/men.png' WHERE id = 14;
-UPDATE kin SET imagen = '../img/kin/kib.png' WHERE id = 15;
-UPDATE kin SET imagen = '../img/kin/kaban.png' WHERE id = 16;
-UPDATE kin SET imagen = '../img/kin/etznab.png' WHERE id = 17;
-UPDATE kin SET imagen = '../img/kin/kawak.png' WHERE id = 18;
-UPDATE kin SET imagen = '../img/kin/ajaw.png' WHERE id = 19;
+UPDATE kin SET imagen = '../img/kin/Imix\'.png' WHERE id = 0;
+UPDATE kin SET imagen = '../img/kin/Ik\'.png' WHERE id = 1;
+UPDATE kin SET imagen = '../img/kin/Ak\'bal\'.png' WHERE id = 2;
+UPDATE kin SET imagen = '../img/kin/K\'an.png' WHERE id = 3;
+UPDATE kin SET imagen = '../img/kin/Chikchan.png' WHERE id = 4;
+UPDATE kin SET imagen = '../img/kin/Kimi.png' WHERE id = 5;
+UPDATE kin SET imagen = '../img/kin/Manik\'.png' WHERE id = 6;
+UPDATE kin SET imagen = '../img/kin/Lamat.png' WHERE id = 7;
+UPDATE kin SET imagen = '../img/kin/Muluk.png' WHERE id = 8;
+UPDATE kin SET imagen = '../img/kin/Ok.png' WHERE id = 9;
+UPDATE kin SET imagen = '../img/kin/Chuwen.png' WHERE id = 10;
+UPDATE kin SET imagen = '../img/kin/Eb\'.png' WHERE id = 11;
+UPDATE kin SET imagen = '../img/kin/B\'en.png' WHERE id = 12;
+UPDATE kin SET imagen = '../img/kin/Ix.png' WHERE id = 13;
+UPDATE kin SET imagen = '../img/kin/Men.png' WHERE id = 14;
+UPDATE kin SET imagen = '../img/kin/Kib\'.png' WHERE id = 15;
+UPDATE kin SET imagen = '../img/kin/Kab\'an.png' WHERE id = 16;
+UPDATE kin SET imagen = '../img/kin/Etz\'anab\'.png' WHERE id = 17;
+UPDATE kin SET imagen = '../img/kin/Kawak.png' WHERE id = 18;
+UPDATE kin SET imagen = '../img/kin/Ajaw.png' WHERE id = 19;
 -- --------------------------------------------------------
 
 --

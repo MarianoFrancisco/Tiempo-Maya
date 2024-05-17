@@ -67,7 +67,7 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempo_maya.pagina WHERE nom
                     $stringPrint = "<h4 id='" . $dato['nombre'] . "'>" . $dato['nombre'] . "</h4>";
                     $stringPrint .= "<h5>Significado</h5> <p>" . $dato['significado'] . "</p>";
                     $stringPrint .= "<div style='text-align: center;'>"; // Abre un div para centrar la imagen
-                    $stringPrint.="<img src=\"../img/".$tabla."/".$dato['nombre'].".png\" class=\"imagen-elemento\" >";
+                    $stringPrint.="<img src=\"../img/".$tabla."/".$dato['nombre'].".png\" class=\"imagenElemento\" >";
                     $stringPrint .= "</div>"; // Cierra el div de centrado
                     $stringPrint .= "<p>" . $dato['htmlCodigo'] . "</p> <hr>";
                     echo $stringPrint;
