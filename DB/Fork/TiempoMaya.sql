@@ -1,4 +1,3 @@
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -7,7 +6,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `tiempo_maya`
 --
-DROP DATABASE tiempo_maya;
 CREATE DATABASE IF NOT EXISTS `tiempo_maya` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `tiempo_maya`;
 
@@ -274,26 +272,26 @@ INSERT INTO `nahual` (`idweb`, `iddesk`, `nombre`, `nombreYucateco`, `significad
 (18, 13, 'Aj', NULL, 'Caña o cañaveral', '<p>\r\n    <strong>Características:</strong>\r\n    Simboliza caña veral y milpa. Todo lo que se relaciona al hogar y la familia. Es el símbolo que dejó Jun Ajpu Ixb’alamkej de su vida,\r\n    cuando sembró la caña en medio del patio de la casa de la abuela Ixmukane. Aj es símbolo de la resurrección de Jun Ajpu e Ixb’alamkej,\r\n    quienes no murieron en manos de los señores de Xib’alb’a. Es el triunfo del bien sobre el mal.\r\n  </p>\r\n  <p>\r\n    Es el destino representado por el Nawal o los Nawales. 8 Aj es el día en el cual se establece el destino de uno, para llamarlo y reconocerlo.\r\n  </p>\r\n  <p>\r\n    también es elote, maíz tierno.  Día relacionado con todo lo que concierne a los niños.\r\n    Es día bueno y sobre todo para rezar por las criaturas.\r\n  </p>\r\n  <p>\r\n    También es el día de la enfermedad debilidad en el tejido óseo, pero de mucha energía espiritual.\r\n    Es el hogar, la casa, todo lo que se relaciona con la casa. Los que nacen en Aj pueden ser sacerdotes mayas.\r\n  </p>\r\n  <p>\r\n    <strong>Función Espiritual:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> El hogar y la familia de todas las generaciones tiernas; 8 Aj se celebra el día del niño.</li>\r\n    <li> El bastón del poder de las virtudes divinas, sensatez, la palabra sagrada.</li>\r\n    <li> Caña, símbolo que dejó Jun Ajpu Ixbalanke de su vida, cuando sembró la caña en el patio, dueño del Hogar, y ternura.</li>\r\n    <li> Nawal de las artes.</li>\r\n  </ul>\r\n  <p><strong>Significado Clave:</strong> La integridad de la fe</p>\r\n  <p>\r\n    <strong>Fortalezas:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Autoridad</li>\r\n    <li> Inteligente</li>\r\n    <li> Estricto</li>\r\n    <li> Es respetado por sus amigos</li>\r\n    <li> Principios sólidos en el terreno moral y ético</li>\r\n    <li> Atraído por la religión o los estudios filosóficos y teológicos</li>\r\n    <li> Trabajador</li>\r\n    <li> Bromista</li>\r\n  </ul>\r\n  <p>\r\n    <strong>Debilidades:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Regaña</li>\r\n    <li> Celoso</li>\r\n    <li> Nervioso</li>\r\n    <li> Expuesto  a discutir y  juzgar</li>\r\n    <li> Hace lo que le plazca</li>\r\n    <li> Extremista, no es de moderación</li>\r\n    <li> Hace bromas pesadas</li>\r\n    <li> No es constante en la fe</li>\r\n    <li> Variable</li>\r\n    <li> Sufre con frecuencia, se enferma en la niñez</li>\r\n    <li> Alcohólico</li>\r\n    <li> Destructor</li>\r\n    <li> Una vida variable, de dolor</li>\r\n    <li> tristeza y alegría</li>\r\n  </ul>', 'Nahual_18', 'Es el Nawal de la casa y de los niños, día propicio para el hogar y la salud de los niños.\nNawal de las generaciones tiernas.\nPersonas que no pueden negarse ante otros.', 'src/imagenesNahuales/13.jpg'),
 (19, 14, 'I\'x', NULL, 'Jaguar', '<p>\r\n    <strong>Características:</strong>\r\n    Es el símbolo y energía de la Madre Tierra. Representa los lugares o centros ceremoniales donde se llevan a cabo las ceremonias.\r\n    Son los cerros, las montañas, las planicies. Significa Jaguar.\r\n  </p>\r\n  <p>\r\n    Representa el altar maya o sea el tab’al. Es un día especial para pedir la vida de los animales tanto domésticos como salvajes.\r\n    Se le pide a Ajaw una buena cosecha de cualquier cultivo, en especial el de las verduras.\r\n    En este día se encienden candelas de color verde, ya que simbolizan el color de la Madre Tierra.\r\n  </p>\r\n  <p>\r\n    Representa el altar maya o sea el tab’al. Es un día especial para pedir la vida de los animales tanto domésticos como salvajes.\r\n    Se le pide a Ajaw una buena cosecha de cualquier cultivo, en especial el de las verduras. En este día se encienden\r\n    candelas de color verde, ya que simbolizan el color de la Madre Tierra.\r\n  </p>\r\n  <p>\r\n    <strong>Función Espiritual:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Propicia energía espiritual y física.</li>\r\n    <li> Invocación por la lluvia.</li>\r\n    <li> Invocación por la vida de los animales.</li>\r\n    <li> Día de invocación por la salud de toda la humanidad.</li>\r\n    <li> Día para realizar invocaciones para que las siembras estén protegidas de los animales.</li>\r\n  </ul>\r\n  <p><strong>Su origen:</strong> Keme <strong>destino:</strong> Iq\'</p>\r\n  <p>\r\n    <strong>Fortalezas:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Es paciente, fuerte, responsable, valiente, respetuoso, vigoroso y atrevido.</li>\r\n    <li> Es decisivo y realista.</li>\r\n    <li> Es de buen corazón.</li>\r\n    <li> Buen padre de familia.</li>\r\n    <li> Puede ser líder y famoso si sabe encauzar sus energías.</li>\r\n  </ul>\r\n  <p>\r\n    <strong>Debilidades:</strong>\r\n  </p>\r\n  <ul>\r\n    <li> Puede llegar a tener un carácter fuerte.</li>\r\n    <li> Algunas veces se enoja y se impacienta.</li>\r\n    <li> Su carácter le puede hacer prepotente, orgulloso, colérico, serio y vengativo.</li>\r\n  </ul>', 'Nahual_19', 'Es el Nawal de la naturaleza y los altares mayas, día para pedir fortaleza física y mental.\nEs el Nawal de las siete vergüenzas humanas: orgullo, ambición, envidia, mentira, crimen, ingratitud, ignorancia por pereza.\nPersonas de razonamiento interno a las que les gusta la naturaleza y la soledad.', 'src/imagenesNahuales/14.jpg');
 
-UPDATE nahual SET imagen = '../img/nahuales/tzikin.png' WHERE idweb = 0;
-UPDATE nahual SET imagen = '../img/nahuales/ajmaq.png' WHERE idweb = 1;
-UPDATE nahual SET imagen = '../img/nahuales/noj.png' WHERE idweb = 2;
-UPDATE nahual SET imagen = '../img/nahuales/tijax.png' WHERE idweb = 3;
-UPDATE nahual SET imagen = '../img/nahuales/kawoq.png' WHERE idweb = 4;
-UPDATE nahual SET imagen = '../img/nahuales/ajpu.png' WHERE idweb = 5;
-UPDATE nahual SET imagen = '../img/nahuales/imox.png' WHERE idweb = 6;
-UPDATE nahual SET imagen = '../img/nahuales/iq.png' WHERE idweb = 7;
-UPDATE nahual SET imagen = '../img/nahuales/aqabal.png' WHERE idweb = 8;
-UPDATE nahual SET imagen = '../img/nahuales/kat.png' WHERE idweb = 9;
-UPDATE nahual SET imagen = '../img/nahuales/kan.png' WHERE idweb = 10;
-UPDATE nahual SET imagen = '../img/nahuales/kame.png' WHERE idweb = 11;
-UPDATE nahual SET imagen = '../img/nahuales/kej.png' WHERE idweb = 12;
-UPDATE nahual SET imagen = '../img/nahuales/qanil.png' WHERE idweb = 13;
-UPDATE nahual SET imagen = '../img/nahuales/toj.png' WHERE idweb = 14;
-UPDATE nahual SET imagen = '../img/nahuales/tzi.png' WHERE idweb = 15;
-UPDATE nahual SET imagen = '../img/nahuales/batz.png' WHERE idweb = 16;
-UPDATE nahual SET imagen = '../img/nahuales/e.png' WHERE idweb = 17;
-UPDATE nahual SET imagen = '../img/nahuales/aj.png' WHERE idweb = 18;
-UPDATE nahual SET imagen = '../img/nahuales/ix.png' WHERE idweb = 19;
+UPDATE nahual SET imagen = '../img/nahual/Tzikin.png' WHERE idweb = 0;
+UPDATE nahual SET imagen = '../img/nahual/Ajmaq.png' WHERE idweb = 1;
+UPDATE nahual SET imagen = '../img/nahual/No\'j.png' WHERE idweb = 2;
+UPDATE nahual SET imagen = '../img/nahual/Tijax.png' WHERE idweb = 3;
+UPDATE nahual SET imagen = '../img/nahual/Kawoq.png' WHERE idweb = 4;
+UPDATE nahual SET imagen = '../img/nahual/Ajpu.png' WHERE idweb = 5;
+UPDATE nahual SET imagen = '../img/nahual/Imox.png' WHERE idweb = 6;
+UPDATE nahual SET imagen = '../img/nahual/Iq\'.png' WHERE idweb = 7;
+UPDATE nahual SET imagen = '../img/nahual/Aq\'ab\'al.png' WHERE idweb = 8;
+UPDATE nahual SET imagen = '../img/nahual/K\'at.png' WHERE idweb = 9;
+UPDATE nahual SET imagen = '../img/nahual/Kan.png' WHERE idweb = 10;
+UPDATE nahual SET imagen = '../img/nahual/Kame.png' WHERE idweb = 11;
+UPDATE nahual SET imagen = '../img/nahual/Kej.png' WHERE idweb = 12;
+UPDATE nahual SET imagen = '../img/nahual/Q\'anil.png' WHERE idweb = 13;
+UPDATE nahual SET imagen = '../img/nahual/Toj.png' WHERE idweb = 14;
+UPDATE nahual SET imagen = '../img/nahual/Tz\'i\'.png' WHERE idweb = 15;
+UPDATE nahual SET imagen = '../img/nahual/B\'atz\'.png' WHERE idweb = 16;
+UPDATE nahual SET imagen = '../img/nahual/E\'.png' WHERE idweb = 17;
+UPDATE nahual SET imagen = '../img/nahual/Aj.png' WHERE idweb = 18;
+UPDATE nahual SET imagen = '../img/nahual/I\'x.png' WHERE idweb = 19;
 -- --------------------------------------------------------
 
 --
@@ -372,25 +370,25 @@ INSERT INTO `uinal` (`idweb`, `nombre`, `significado`, `dias`, `htmlCodigo`, `ca
 (17, 'K\'ayab\'', 'Tortuga, guacamaya', 20, '<p>Durante los meses <strong>kayab </strong>y <strong>Kumku </strong>en cada población hacían fiestas a las cuales llamaban <strong>zabacilthan</strong>, se reunían para presentar ofrendas, comer y beber preparándose para el <strong><em>uayeb</em></strong>, el mes corto de los cinco días nefastos. </p>', 'Uinal_17', 16, 'src/imagenesWinales/17.png'),
 (18, 'K\'umk\'u\'', 'Maiz maduro, granero, oscuridad', 20, '<p>Durante los meses <strong>kayab </strong>y <strong>Kumku </strong>en cada población hacían fiestas a las cuales llamaban <strong>zabacilthan</strong>, se reunían para presentar ofrendas, comer y beber preparándose para el <strong><em>uayeb</em></strong>, el mes corto de los cinco días nefastos. </p>', 'Uinal_18', 17, 'src/imagenesWinales/18.png');
 
-UPDATE uinal SET imagen = '../img/uinales/wayeb.png' WHERE idweb = 0;
-UPDATE uinal SET imagen = '../img/uinales/pop.png' WHERE idweb = 1;
-UPDATE uinal SET imagen = '../img/uinales/woo.png' WHERE idweb = 2;
-UPDATE uinal SET imagen = '../img/uinales/zip.png' WHERE idweb = 3;
-UPDATE uinal SET imagen = '../img/uinales/sotz.png' WHERE idweb = 4;
-UPDATE uinal SET imagen = '../img/uinales/tzek.png' WHERE idweb = 5;
-UPDATE uinal SET imagen = '../img/uinales/xul.png' WHERE idweb = 6;
-UPDATE uinal SET imagen = '../img/uinales/yaxkin.png' WHERE idweb = 7;
-UPDATE uinal SET imagen = '../img/uinales/mol.png' WHERE idweb = 8;
-UPDATE uinal SET imagen = '../img/uinales/chen.png' WHERE idweb = 9;
-UPDATE uinal SET imagen = '../img/uinales/yax.png' WHERE idweb = 10;
-UPDATE uinal SET imagen = '../img/uinales/sak.png' WHERE idweb = 11;
-UPDATE uinal SET imagen = '../img/uinales/keh.png' WHERE idweb = 12;
-UPDATE uinal SET imagen = '../img/uinales/tzek.png' WHERE idweb = 13;
-UPDATE uinal SET imagen = '../img/uinales/kankin.png' WHERE idweb = 14;
-UPDATE uinal SET imagen = '../img/uinales/muwan.png' WHERE idweb = 15;
-UPDATE uinal SET imagen = '../img/uinales/pax.png' WHERE idweb = 16;
-UPDATE uinal SET imagen = '../img/uinales/kayab.png' WHERE idweb = 17;
-UPDATE uinal SET imagen = '../img/uinales/kumku.png' WHERE idweb = 18;
+UPDATE uinal SET imagen = '../img/uinal/Wayeb\'.png' WHERE idweb = 0;
+UPDATE uinal SET imagen = '../img/uinal/Pop.png' WHERE idweb = 1;
+UPDATE uinal SET imagen = '../img/uinal/Woo.png' WHERE idweb = 2;
+UPDATE uinal SET imagen = '../img/uinal/Zip.png' WHERE idweb = 3;
+UPDATE uinal SET imagen = '../img/uinal/Sotz\'.png' WHERE idweb = 4;
+UPDATE uinal SET imagen = '../img/uinal/Tzek.png' WHERE idweb = 5;
+UPDATE uinal SET imagen = '../img/uinal/xul.png' WHERE idweb = 6;
+UPDATE uinal SET imagen = '../img/uinal/Yaxk\'in.png' WHERE idweb = 7;
+UPDATE uinal SET imagen = '../img/uinal/Mol.png' WHERE idweb = 8;
+UPDATE uinal SET imagen = '../img/uinal/Ch\'en.png' WHERE idweb = 9;
+UPDATE uinal SET imagen = '../img/uinal/Yax.png' WHERE idweb = 10;
+UPDATE uinal SET imagen = '../img/uinal/Sak.png' WHERE idweb = 11;
+UPDATE uinal SET imagen = '../img/uinal/keh.png' WHERE idweb = 12;
+UPDATE uinal SET imagen = '../img/uinal/Mak.png' WHERE idweb = 13;
+UPDATE uinal SET imagen = '../img/uinal/K\'ank\'in.png' WHERE idweb = 14;
+UPDATE uinal SET imagen = '../img/uinal/Muwan.png' WHERE idweb = 15;
+UPDATE uinal SET imagen = '../img/uinal/Pax.png' WHERE idweb = 16;
+UPDATE uinal SET imagen = '../img/uinal/K\'ayab\'.png' WHERE idweb = 17;
+UPDATE uinal SET imagen = '../img/uinal/K\'umk\'u\'.png' WHERE idweb = 18;
 --
 -- Restricciones para tablas volcadas
 --

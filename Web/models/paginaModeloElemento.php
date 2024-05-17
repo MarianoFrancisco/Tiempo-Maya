@@ -43,17 +43,17 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempo_maya.pagina WHERE nom
     </section>
     <br><br><br><br>
     <section id=" information">
-            <div class="container">
-                <div class="row about-container">
-                    <div class="section-header">
-                        <h3 class="section-title">INFORMACION</h3>
-                    </div>
-                    <?php foreach ($informacion as $info) {
-                        echo $info['htmlCodigo'];
-                    } ?>
+        <div class="container">
+            <div class="row about-container">
+                <div class="section-header">
+                    <h3 class="section-title">INFORMACION</h3>
                 </div>
-
+                <?php foreach ($informacion as $info) {
+                    echo $info['htmlCodigo'];
+                } ?>
             </div>
+
+        </div>
     </section>
     <hr>
 
@@ -66,12 +66,13 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempo_maya.pagina WHERE nom
                 <?php foreach ($datos as $dato) {
                     $stringPrint = "<h4 id='" . $dato['nombre'] . "'>" . $dato['nombre'] . "</h4>";
                     $stringPrint .= "<h5>Significado</h5> <p>" . $dato['significado'] . "</p>";
-                    $stringPrint .= "<img class=\"imagenElemento\" alt=\"\" src='" . $dato['imagen'] . "'>";
+                    $stringPrint .= "<div style='text-align: center;'>"; // Abre un div para centrar la imagen
+                    $stringPrint.="<img src=\"../img/".$tabla."/".$dato['nombre'].".png\" class=\"imagen-elemento\" >";
+                    $stringPrint .= "</div>"; // Cierra el div de centrado
                     $stringPrint .= "<p>" . $dato['htmlCodigo'] . "</p> <hr>";
                     echo $stringPrint;
                 } ?>
             </div>
-
         </div>
     </section>
 

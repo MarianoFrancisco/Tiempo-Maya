@@ -13,6 +13,10 @@ $energia = include 'backend/buscar/conseguir_energia_numero.php';
 $haab = include 'backend/buscar/conseguir_uinal_nombre.php';
 $cuenta_larga = include 'backend/buscar/conseguir_fecha_cuenta_larga.php';
 $cholquij = $nahual . " " . strval($energia);
+$nombre_nahual = $nahual;
+$numero_energia = strval($energia);
+$fecha_haab = $haab[0];
+$nombre_uinal = $haab[1];
 
 ?>
 <!DOCTYPE html>
@@ -37,10 +41,26 @@ $cholquij = $nahual . " " . strval($energia);
       <div id="inicioContainer" class="inicio-container">
         <br><br><br><br><br>
         <h1><br><br>Tiempo Maya</h1><br><br>
-        <img alt="" src="./img/logonew2.png" width=185" height="160">
-        <h5 style="color: whitesmoke;font-size: 18px;">Calendario Haab : <?php echo isset($haab) ? $haab : ''; ?></h5>
-        <h5 style="color: whitesmoke;font-size: 18px;">Calendario Cholquij : <?php echo isset($cholquij) ? $cholquij : ''; ?></h5>
-        <h5 style="color: whitesmoke;font-size: 18px;">Cuenta Larga : <?php echo isset($cuenta_larga) ? $cuenta_larga : ''; ?></h5>
+        <img alt="" src="./img/logonew2.png" width="185" height="160">
+        <h5 style="color: whitesmoke;font-size: 18px;">Calendario Haab :
+          <?php echo isset($fecha_haab) ? $fecha_haab : ''; ?>
+          &nbsp;
+          <a href='<?php echo "models/paginaModeloElemento.php?elemento=uinal#" . $nombre_uinal; ?>'>
+            <img width='50' height='50' src="img/uinal/<?php echo $nombre_uinal; ?>.png"
+              alt="Error al intentar mostrar al uinal <?php echo $nombre_uinal; ?>" class='imagen-elemento'>
+          </a>
+        </h5>
+        <h5 style="color: whitesmoke;font-size: 18px;">Calendario Cholquij :
+          <?php echo isset($cholquij) ? $cholquij : ''; ?>
+          &nbsp;
+          <a href='<?php echo "models/paginaModeloElemento.php?elemento=nahual#" . $nombre_nahual; ?>'>
+            <img width='50' height='50' src="img/nahual/<?php echo $nombre_nahual; ?>.png"
+              alt="Error al intentar mostrar al nahual <?php echo $nombre_nahual; ?>" class='imagen-elemento'>
+          </a>
+        </h5>
+        <h5 style="color: whitesmoke;font-size: 18px;">Cuenta Larga :
+          <?php echo isset($cuenta_larga) ? $cuenta_larga : ''; ?>
+        </h5>
         <label style="color: whitesmoke;"><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></label>
       </div>
     </section>
@@ -63,17 +83,19 @@ $cholquij = $nahual . " " . strval($energia);
               interés acerca de la cultura maya y las herramientas que nos brindan nos ayudan a tener una mejor
               interacción con el usuario, así como puede llegar hacer un canal de comunicación y construcción del
               conocimiento con otros interesados. </p>
-            <img alt="" src="./img/logonew3.png" width="185" height="160">
-            <a href="https://srlabs.a2hosted.com/rs-humhub/index.php?r=wiki%2Fpage%2Fview&title=Proyecto+Tiempo+Maya&cguid=03ab5d70-702f-4844-a654-5f47fd6a1f61">
-              <img alt="" src="./img/srlabs.png" width="400" height="160">
-            </a>
-            <img alt="" src="./img/logonew3.png" width="185" height="160">
+            <div style="text-align: center;">
+              <img alt="" src="./img/logonew3.png" width="185" height="160">
+              <a
+                href="https://srlabs.a2hosted.com/rs-humhub/index.php?r=wiki%2Fpage%2Fview&title=Proyecto+Tiempo+Maya&cguid=03ab5d70-702f-4844-a654-5f47fd6a1f61">
+                <img alt="" src="./img/srlabs.png" width="400" height="160">
+              </a>
+              <img alt="" src="./img/logonew3.png" width="185" height="160">
+            </div>
           </div>
         </div>
       </div>
     </section>
   </div>
-
 
   <?php include "blocks/bloquesJs1.html" ?>
 
