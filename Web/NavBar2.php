@@ -19,23 +19,29 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
   <div class="container">
     <nav class="navbar navbar-expand-lg" id="nav-menu-container">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" onclick="rellenar()" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" onclick="rellenar()" data-toggle="collapse"
+          data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span><i style="color: white;" class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav nav-menu">
             <li>
-              <a class="nav-link" href="../models/paginaModelo.php?pagina=Calendario Haab" style="color: white;font-size: 17px;">Calendario Haab &nbsp;&nbsp;&nbsp;&nbsp; </a>
-              <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="../models/paginaModelo.php?pagina=Calendario Haab"
+                style="color: white;font-size: 17px;">Calendario Haab &nbsp;&nbsp;&nbsp;&nbsp; </a>
+              <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Calendario Haab
               </button>
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
-                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Kin
                   </button>
-                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=kin" style="font-size: 13px;">Kines </a>
+                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=kin"
+                    style="font-size: 13px;">Kines </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
                       <?php if (is_array($kinesNav) || is_object($kinesNav)) {
@@ -46,10 +52,12 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                   </ul>
                 </li>
                 <li>
-                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Uinal
                   </button>
-                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=uinal" style="font-size: 13px;">Uinales </a>
+                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=uinal"
+                    style="font-size: 13px;">Uinales </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
                       <?php if (is_array($uinalesNav) || is_object($uinalesNav)) {
@@ -63,17 +71,21 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
             </li>
 
             <li>
-              <a class="nav-link" href="../models/paginaModelo.php?pagina=Calendario Cholquij" style="color: white;font-size: 17px;">Calendario Cholq'ij &nbsp;&nbsp;&nbsp;&nbsp; </a>
-              <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="../models/paginaModelo.php?pagina=Calendario Cholquij"
+                style="color: white;font-size: 17px;">Calendario Cholq'ij &nbsp;&nbsp;&nbsp;&nbsp; </a>
+              <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Calendario Cholquij
               </button>
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
-                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Nahual
                   </button>
-                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=nahual" style="font-size: 13px;">Nahuales </a>
+                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=nahual"
+                    style="font-size: 13px;">Nahuales </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
                       <?php if (is_array($nahualesNav) || is_object($nahualesNav)) {
@@ -85,10 +97,12 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                   </ul>
                 </li>
                 <li>
-                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Energia
                   </button>
-                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=energia" style="font-size: 13px;">Energias </a>
+                  <a class="nav-link" href="../models/paginaModeloElemento.php?elemento=energia"
+                    style="font-size: 13px;">Energias </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <div div style="width: 200px; height:400px; overflow-y: scroll;">
                       <?php if (is_array($energiasNav) || is_object($energiasNav)) {
@@ -102,11 +116,23 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../models/paginaModelo.php?pagina=Rueda Calendarica" style="color: white;font-size: 17px;">Rueda Calendarica</a>
+              <a class="nav-link" href="../models/paginaModelo.php?pagina=Rueda Calendarica"
+                style="color: white;font-size: 17px;">Rueda Calendarica</a>
             </li>
-            
-            <li class="nav-item"><a class="nav-link" href="../calculadora.php" style="color: white;font-size: 17px;">Calculadora</a></li>
-           
+            <li>
+              <a class="nav-link" href="../models/paginaModelo.php?pagina=Calculadoras"
+                style="color: white;font-size: 17px;">Calculadoras &nbsp;&nbsp;&nbsp;&nbsp; </a>
+              <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Calculadoras
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="nav-item"><a class="nav-link" href="../calculadora-calendario-gregoriano.php">
+                    Calendario Gregoriano</a></li>
+                <li class="nav-item"><a class="nav-link" href="../calculadora-cuenta-larga.php">
+                    Cuenta Larga</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>

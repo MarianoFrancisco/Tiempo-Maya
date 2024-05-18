@@ -22,7 +22,7 @@ $fecha_haab = $haab[0];
 
 <head>
     <meta charset="utf-8">
-    <title>Tiempo Maya - Calculadora de Mayas</title>
+    <title>Tiempo Maya - Calculadora de Calendario Gregoriano</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <?php include "blocks/bloquesCss.html" ?>
     <link rel="stylesheet" href="css/estilo.css?v=<?php echo (rand()); ?>" />
@@ -41,7 +41,7 @@ $fecha_haab = $haab[0];
                     <h1>Calculadora</h1>
                     <form action="#" method="GET">
                         <div class="mb-1">
-                            <label for="fecha" class="form-label">Fecha</label>
+                            <label for="fecha" class="form-label">Fecha en Calendario Gregoriano</label>
                             <input type="date" class="form-control" name="fecha" id="fecha" value="<?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?>">
                         </div>
                         <button type="submit" class="btn btn-get-started"><i class="far fa-clock"></i> Calcular</button>
