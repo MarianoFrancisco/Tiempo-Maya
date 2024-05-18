@@ -73,7 +73,7 @@ $datos = $conn->query("SELECT nombre, duracion, htmlCodigo FROM tiempo_maya.cuen
     }
 
     ?>
-    <?php if ($datos->num_rows > 0) {
+    <?php if ($datos->num_rows > 0 && $tabla == "cuenta_larga") {
         $stringPrint = "<section id='elementos'>";
         $stringPrint .= "<div class='container'>";
         $stringPrint .= " <div class='row about-container'>";
