@@ -12,11 +12,11 @@ if ($fecha_actual > $fecha_entrada) {
 if ($reversa) {
     $dias = $dias % 365;
     if ($dias < 360) {
-        $mes = 18-ceil($dias / 20);
-        $dia = 20-$dias % 20;
+        $mes = 18 - ceil($dias / 20);
+        $dia = 20 - $dias % 20;
     } else {
         $mes = 0;
-        $dia = 365-$dias;
+        $dia = 365 - $dias;
     }
 } else {
     if ($dias >= 365) {
@@ -24,7 +24,7 @@ if ($reversa) {
     }
     if ($dias > 5) {
         $dias = $dias - 5;
-        $diasmes  = $dias+1;
+        $diasmes = $dias + 1;
         $mes = ceil($diasmes / 20);
         $dia = $dias % 20;
     } else {
@@ -34,9 +34,9 @@ if ($reversa) {
 }
 
 
-$Query = $conn->query("SELECT nombre FROM uinal WHERE idweb=".$mes." ;");
+$Query = $conn->query("SELECT nombre FROM uinal WHERE idweb=" . $mes . " ;");
 $row = mysqli_fetch_assoc($Query);
-$uinal = $row['nombre']." ";
-return array($uinal.strval($dia),$row['nombre']);
+$uinal = $row['nombre'] . " ";
+return array($uinal . strval($dia), $row['nombre'], strval($dia));
 
 ?>

@@ -3,11 +3,11 @@
 
 $conn = include '../conexion/conexion.php';
 $pagina = $_GET['pagina'];
+$tabla = strtolower(str_replace(' ', '_', $pagina));
 $informacion = $conn->query("SELECT htmlCodigo,seccion,nombre FROM tiempo_maya.pagina WHERE categoria='" . $pagina . "' order by orden;");
 $secciones = $conn->query("SELECT seccion FROM tiempo_maya.pagina WHERE categoria='" . $pagina . "' group by seccion  order by orden;");
 $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria='" . $pagina . "' AND nombre!='Informacion' AND seccion!='Informacion' order by orden;");
-
-
+$datos = $conn->query("SELECT nombre, duracion, htmlCodigo FROM tiempo_maya.cuenta_larga;");
 
 ?>
 
@@ -28,7 +28,7 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
 
 <body>
     <section id="inicio">
-    <video src="../img/background.mp4" autoplay="true" muted="true" loop="true"></video>
+        <video src="../img/background.mp4" autoplay="true" muted="true" loop="true"></video>
         <div id="inicioContainer" class="inicio-container">
 
             <?php echo "<h1>" . $pagina . " </h1>";
@@ -73,15 +73,28 @@ $elementos = $conn->query("SELECT nombre FROM tiempo_maya.pagina WHERE categoria
     }
 
     ?>
-
-
-
-
+    <?php if ($datos->num_rows > 0) {
+        $stringPrint = "<section id='elementos'>";
+        $stringPrint .= "<div class='container'>";
+        $stringPrint .= " <div class='row about-container'>";
+        $stringPrint .= "<div class='section-header'>";
+        $stringPrint .= "<h3 class='section-title'>Elementos</h3></div>";
+        foreach ($datos as $dato) {
+            $stringPrint .= "<h4 id='" . $dato['nombre'] . "'>" . $dato['nombre'] . "</h4>";
+            $stringPrint .= "<h5>Duración</h5> <p>" . $dato['duracion'] . "</p>";
+            $stringPrint .= "<div style='text-align: center;'>"; // Abre un div para centrar la imagen
+            $stringPrint .= "<img src=\"../img/" . $tabla . "/" . $dato['nombre'] . ".png\" class=\"imagenElemento\" >";
+            $stringPrint .= "</div>"; // Cierra el div de centrado
+            $stringPrint .= "<p>" . $dato['htmlCodigo'] . "</p> <hr>";
+        }
+        $stringPrint .= "</div>";
+        $stringPrint .= "</div>";
+        $stringPrint .= "</section>";
+        echo $stringPrint;
+    }
+    ?>
 
     <?php include "../blocks/bloquesJs.html" ?>
-
-
-
 
 </body>
 

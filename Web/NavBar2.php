@@ -69,7 +69,6 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                 </li>
               </ul>
             </li>
-
             <li>
               <a class="nav-link" href="../models/paginaModelo.php?pagina=Calendario Cholquij"
                 style="color: white;font-size: 17px;">Calendario Cholq'ij &nbsp;&nbsp;&nbsp;&nbsp; </a>
@@ -114,6 +113,10 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                   </ul>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../models/paginaModelo.php?pagina=Cuenta Larga"
+                style="color: white;font-size: 17px;">Cuenta Larga</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../models/paginaModelo.php?pagina=Rueda Calendarica"

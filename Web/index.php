@@ -12,11 +12,20 @@ $nahual = include 'backend/buscar/conseguir_nahual_nombre.php';
 $energia = include 'backend/buscar/conseguir_energia_numero.php';
 $haab = include 'backend/buscar/conseguir_uinal_nombre.php';
 $cuenta_larga = include 'backend/buscar/conseguir_fecha_cuenta_larga.php';
+$partes = explode('.', $cuenta_larga);
+$baktuns = $partes[0];
+$katuns = $partes[1];
+$tuns = $partes[2];
+$uinals = $partes[3];
+$kins = $partes[4];
+$mostrar_cuenta_larga = "Baktún " . $baktuns . " Katún " . $katuns . " Tun "
+  . $tuns . " Uinal " . $uinals . " Kin " . $kins;
 $cholquij = $nahual . " " . strval($energia);
 $nombre_nahual = $nahual;
 $numero_energia = strval($energia);
 $fecha_haab = $haab[0];
 $nombre_uinal = $haab[1];
+$numero_uinal = $haab[2];
 
 ?>
 <!DOCTYPE html>
@@ -39,27 +48,51 @@ $nombre_uinal = $haab[1];
     <section id="inicio">
       <video src="./img/background.mp4" autoplay="true" muted="true" loop="true"></video>
       <div id="inicioContainer" class="inicio-container">
-        <br><br><br><br><br>
-        <h1><br><br>Tiempo Maya</h1><br><br>
+        <h1><br><br><br>Tiempo Maya</h1><br><br>
         <img alt="" src="./img/logonew2.png" width="185" height="160">
+        <a href='<?php echo "models/paginaModeloElemento.php?elemento=uinal#" . $nombre_uinal; ?>'>
+          <img width='50' height='50' src="img/uinal/<?php echo $nombre_uinal; ?>.png"
+            alt="Error al intentar mostrar al uinal <?php echo $nombre_uinal; ?>" class='imagen-elemento'>
+          <img width='50' height='50' src="img/numero/<?php echo $numero_uinal; ?>.png"
+            alt="Error al intentar mostrar el numero del uinal <?php echo $numero_uinal; ?>" class='imagen-elemento'>
+        </a>
         <h5 style="color: whitesmoke;font-size: 18px;">Calendario Haab :
           <?php echo isset($fecha_haab) ? $fecha_haab : ''; ?>
-          &nbsp;
-          <a href='<?php echo "models/paginaModeloElemento.php?elemento=uinal#" . $nombre_uinal; ?>'>
-            <img width='50' height='50' src="img/uinal/<?php echo $nombre_uinal; ?>.png"
-              alt="Error al intentar mostrar al uinal <?php echo $nombre_uinal; ?>" class='imagen-elemento'>
-          </a>
         </h5>
+        <a href='<?php echo "models/paginaModeloElemento.php?elemento=nahual#" . $nombre_nahual; ?>'>
+          <img width='50' height='50' src="img/nahual/<?php echo $nombre_nahual; ?>.png"
+            alt="Error al intentar mostrar al nahual <?php echo $nombre_nahual; ?>" class='imagen-elemento'>
+          <img width='50' height='50' src="img/numero/<?php echo $numero_energia; ?>.png"
+            alt="Error al intentar mostrar el numero del nahual <?php echo $numero_energia; ?>" class='imagen-elemento'>
+        </a>
         <h5 style="color: whitesmoke;font-size: 18px;">Calendario Cholquij :
           <?php echo isset($cholquij) ? $cholquij : ''; ?>
-          &nbsp;
-          <a href='<?php echo "models/paginaModeloElemento.php?elemento=nahual#" . $nombre_nahual; ?>'>
-            <img width='50' height='50' src="img/nahual/<?php echo $nombre_nahual; ?>.png"
-              alt="Error al intentar mostrar al nahual <?php echo $nombre_nahual; ?>" class='imagen-elemento'>
-          </a>
         </h5>
+
+        <a href='<?php echo "models/paginaModelo.php?pagina=Cuenta Larga"; ?>'>
+          <img width='50' height='50' src="img/cuenta_larga/Baktún.png" alt="Error al intentar mostrar el Baktún"
+            class='imagen-elemento'>
+          <img width='50' height='50' src="img/numero/<?php echo $baktuns; ?>.png"
+            alt="Error al intentar mostrar el numero del baktun <?php echo $baktuns; ?>" class='imagen-elemento'>
+          <img width='50' height='50' src="img/cuenta_larga/Katún.png" alt="Error al intentar mostrar el Katún"
+            class='imagen-elemento'>
+          <img width='50' height='50' src="img/numero/<?php echo $katuns; ?>.png"
+            alt="Error al intentar mostrar el numero del baktun <?php echo $katuns; ?>" class='imagen-elemento'>
+          <img width='50' height='50' src="img/cuenta_larga/Tun.png" alt="Error al intentar mostrar el Tun"
+            class='imagen-elemento'>
+          <img width='50' height='50' src="img/numero/<?php echo $tuns; ?>.png"
+            alt="Error al intentar mostrar el numero del baktun <?php echo $tuns; ?>" class='imagen-elemento'>
+          <img width='50' height='50' src="img/cuenta_larga/Uinal.png" alt="Error al intentar mostrar Uinal"
+            class='imagen-elemento'>
+          <img width='50' height='50' src="img/numero/<?php echo $uinals; ?>.png"
+            alt="Error al intentar mostrar el numero del baktun <?php echo $uinals; ?>">
+          <img width='50' height='50' src="img/cuenta_larga/Kin.png" alt="Error al intentar mostrar el Kin"
+            class='imagen-elemento'>
+          <img width='50' height='50' src="img/numero/<?php echo $kins; ?>.png"
+            alt="Error al intentar mostrar el numero del baktun <?php echo $kins; ?>" class='imagen-elemento'>
+        </a>
         <h5 style="color: whitesmoke;font-size: 18px;">Cuenta Larga :
-          <?php echo isset($cuenta_larga) ? $cuenta_larga : ''; ?>
+          <?php echo isset($mostrar_cuenta_larga) ? $mostrar_cuenta_larga : ''; ?>
         </h5>
         <label style="color: whitesmoke;"><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></label>
       </div>
