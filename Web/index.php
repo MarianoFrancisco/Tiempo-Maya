@@ -97,6 +97,11 @@ $numero_uinal = $haab[2];
         <label style="color: whitesmoke;"><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></label>
       </div>
     </section>
+      <div style="text-align: center; margin-top: 10px;">
+        <audio autoplay loop controls style="width: 15%;">
+          <source src="audio/El_Alba.mp3" type="audio/mpeg">
+        </audio>
+      </div>
     <br><br><br><br>
     <section id="information">
       <div class="container">
