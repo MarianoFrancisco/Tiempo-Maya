@@ -39,6 +39,7 @@ $numero_uinal = $haab[2];
   <link rel="stylesheet" href="css/estilo.css?v=<?php echo (rand()); ?>" />
   <link rel="stylesheet" href="css/estiloAdmin.css?v=<?php echo (rand()); ?>" />
   <link rel="stylesheet" href="css/index.css?v=<?php echo (rand()); ?>" />
+  <script src="js/song.js"></script>
 </head>
 
 <body>
@@ -97,11 +98,21 @@ $numero_uinal = $haab[2];
         <label style="color: whitesmoke;"><?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?></label>
       </div>
     </section>
-      <div style="text-align: center; margin-top: 10px;">
-        <audio autoplay loop controls style="width: 15%;">
-          <source src="audio/El_Alba.mp3" type="audio/mpeg">
-        </audio>
+    <div style="text-align: center; margin-top: 10px; position: relative;">
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <div style="position: relative">
+          <img src="img/previous.png" alt="Anterior" width="50" height="50" onclick="playPreviousSong()">
+        </div>&nbsp&nbsp
+        <audio id="audioPlayer" autoplay controls style="width: 25%;">
+          <source id="audioSource" src="audio/Tz'utuj_Q'ajom.mp3" type="audio/mpeg">
+        </audio>&nbsp&nbsp
+        <div style="position: relative">
+          <img src="img/next.png" alt="Anterior" width="50" height="50" onclick="playNextSong()">
+        </div>
       </div>
+    </div>
+
+
     <br><br><br><br>
     <section id="information">
       <div class="container">
