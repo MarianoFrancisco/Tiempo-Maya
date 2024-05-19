@@ -23,4 +23,15 @@ audio::-webkit-media-controls-panel {
 #overButton img:hover {
     width: 55px;
     height: 55px;
-  }
+}
+
+#currentSongTitle {
+    text-align: center;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 15px;
+    z-index: 99999;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

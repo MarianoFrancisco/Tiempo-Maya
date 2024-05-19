@@ -99,6 +99,8 @@ $numero_uinal = $haab[2];
       </div>
     </section>
     <div style="text-align: center; margin-top: 10px; position: relative;">
+    <h5 id="currentSongTitle">Tz'utuj Q'ajom</h5>
+
       <div style="display: flex; align-items: center; justify-content: center;">
         <div id="overButton" style="position: relative">
           <img src="img/previous.png" alt="Anterior" width="50" height="50" onclick="playPreviousSong()">

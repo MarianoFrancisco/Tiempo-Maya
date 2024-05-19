@@ -28,4 +28,12 @@ function playSongAtIndex(index) {
     audioSource.src = "audio/" + songs[index];
     audioPlayer.load();
     audioPlayer.play();
+    updateCurrentSong();
+}
+
+function updateCurrentSong() {
+    var audioSource = document.getElementById("audioSource");
+    var currentSong = audioSource.src.split('/').pop().replace('.mp3', '').replace(/_/g, ' ');
+    var currentSongElement = document.getElementById("currentSongTitle");
+    currentSongElement.textContent = currentSong;
 }

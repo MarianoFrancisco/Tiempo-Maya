@@ -9,7 +9,7 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
 
 ?>
 <?php include "mensaje.php"; ?>
-<div style="position:fixed;z-index:991; top:7px; left:80px;">
+<div style="position:fixed;z-index:991; top:5px; left:20px;">
   <a href="index.php">
     <img alt="" src="./img/logonew.gif" width=160" height="160">
   </a>
@@ -138,6 +138,20 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                 <li class="nav-item"><a class="nav-link" href="calculadora-cuenta-larga.php">
                     Cuenta Larga</a>
                 </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="models/paginaModelo.php?pagina=Sabiduría Maya"
+                style="color: white;font-size: 17px;">Sabiduría Maya &nbsp;&nbsp;&nbsp;&nbsp; </a>
+              <button type="button" style="opacity: 0; height: 0;" class="nav-link" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sabiduría Maya
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="nav-item"><a class="nav-link" href="infografia-dia.php">
+                    Infografía del día</a></li>
+                <li class="nav-item"><a class="nav-link" href="cruz-maya.php">
+                    Cruz Maya</a></li>
               </ul>
             </li>
           </ul>
