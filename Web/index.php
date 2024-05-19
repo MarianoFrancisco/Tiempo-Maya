@@ -100,13 +100,13 @@ $numero_uinal = $haab[2];
     </section>
     <div style="text-align: center; margin-top: 10px; position: relative;">
       <div style="display: flex; align-items: center; justify-content: center;">
-        <div style="position: relative">
+        <div id="overButton" style="position: relative">
           <img src="img/previous.png" alt="Anterior" width="50" height="50" onclick="playPreviousSong()">
         </div>&nbsp&nbsp
         <audio id="audioPlayer" autoplay controls style="width: 25%;">
           <source id="audioSource" src="audio/Tz'utuj_Q'ajom.mp3" type="audio/mpeg">
         </audio>&nbsp&nbsp
-        <div style="position: relative">
+        <div id="overButton" style="position: relative">
           <img src="img/next.png" alt="Anterior" width="50" height="50" onclick="playNextSong()">
         </div>
       </div>
