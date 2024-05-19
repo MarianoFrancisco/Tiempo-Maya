@@ -99,7 +99,7 @@ $fecha_haab = $haab[0];
                                 </tr>
                                 <tr>
                                     <th scope="row">Calendario Gregoriano</th>
-                                    <td><?php echo isset($calendario_gregoriano) ? $calendario_gregoriano : ''; ?></td>
+                                    <td><?php echo isset($calendario_gregoriano) ? date("m/d/Y", strtotime($calendario_gregoriano)) : ''; ?></td>
                                 </tr>
                             </tbody>
                         </table>
