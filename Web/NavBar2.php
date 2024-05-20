@@ -1,6 +1,7 @@
 <?php
 
 $conn = include '../conexion/conexion.php';
+include ("backend/buscar/conseguir_nombre_imagen_menu.php");
 $kinesNav = $conn->query("SELECT nombre FROM tiempo_maya.kin order by nombre;");
 $uinalesNav = $conn->query("SELECT nombre FROM tiempo_maya.uinal order by nombre;");
 $nahualesNav = $conn->query("SELECT nombre FROM tiempo_maya.nahual order by nombre;");
@@ -44,11 +45,13 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                     style="font-size: 13px;">Kines </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
-                      <?php if (is_array($kinesNav) || is_object($kinesNav)) {
+                      <?php
+                      if (is_array($kinesNav) || is_object($kinesNav)) {
                         foreach ($kinesNav as $kin) {
-                          echo "<li class='nav-item'><a class='nav-link' href='../models/paginaModeloElemento.php?elemento=kin#" . $kin['nombre'] . "'>" . $kin['nombre'] . "</a></li>";
+                          echo getLi($kin, "../img/kin", "png", "models/paginaModeloElemento.php?elemento=kin#" . $kin['nombre']);
                         }
-                      } ?>
+                      }
+                      ?>
                   </ul>
                 </li>
                 <li>
@@ -62,9 +65,10 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
                       <?php if (is_array($uinalesNav) || is_object($uinalesNav)) {
                         foreach ($uinalesNav as $uinal) {
-                          echo "<li class='nav-item'><a class='nav-link' href='../models/paginaModeloElemento.php?elemento=uinal#" . $uinal['nombre'] . "'>" . $uinal['nombre'] . "</a></li>";
+                          echo getLi($uinal, "../img/uinal", "png", "models/paginaModeloElemento.php?elemento=uinal#" . $uinal['nombre']);
                         }
-                      } ?>
+                      }
+                      ?>
                   </ul>
                 </li>
               </ul>
@@ -89,9 +93,10 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
                       <?php if (is_array($nahualesNav) || is_object($nahualesNav)) {
                         foreach ($nahualesNav as $nahual) {
-                          echo "<li class='nav-item'><a class='nav-link' href='../models/paginaModeloElemento.php?elemento=nahual#" . $nahual['nombre'] . "'>" . $nahual['nombre'] . "</a></li>";
+                          echo getLi($nahual, "../img/nahual", "png", "models/paginaModeloElemento.php?elemento=nahual#" . $nahual['nombre']);
                         }
-                      } ?>
+                      }
+                      ?>
                     </div>
                   </ul>
                 </li>
@@ -106,9 +111,10 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                     <div div style="width: 200px; height:400px; overflow-y: scroll;">
                       <?php if (is_array($energiasNav) || is_object($energiasNav)) {
                         foreach ($energiasNav as $energia) {
-                          echo "<li class='nav-item'><a class='nav-link' href='../models/paginaModeloElemento.php?elemento=energia#" . $energia['nombre'] . "'>" . $energia['nombre'] . "</a></li>";
+                          echo getLi($energia, "../img/energia", "png", "models/paginaModeloElemento.php?elemento=energia#" . $nahual['nombre']);
                         }
-                      } ?>
+                      }
+                      ?>
                     </div>
                   </ul>
                 </li>
