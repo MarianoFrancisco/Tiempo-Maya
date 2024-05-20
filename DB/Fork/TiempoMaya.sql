@@ -428,15 +428,42 @@ ALTER TABLE `uinal`
 UPDATE energia SET nombre = 'Oxlajuj\'' WHERE id = 13;
 UPDATE kin SET nombre = 'B\'en' WHERE id = 12;
 
+INSERT INTO `categoria` (`nombre`) VALUES
+('Cuenta Larga'),
+('Calculadoras'),
+('Sabiduría Maya');    
+
 INSERT INTO `pagina` (`orden`, `nombre`, `categoria`, `seccion`, `htmlCodigo`) VALUES
-(0, 'Informacion', 'Cuenta Larga', 'Informacion', '<p>La Cuenta Larga es un sistema de calendario utilizado por las antiguas civilizaciones mesoamericanas, especialmente por los mayas. Esta cuenta de tiempo es un sistema de conteo lineal que mide el tiempo transcurrido desde una fecha de inicio que los mayas consideraban como el inicio del mundo o de una era particular. Esta fecha de inicio se conoce como el punto de partida o el \"cero\" de la Cuenta Larga.</p>\n\n</p>
-El sistema de la Cuenta Larga consiste en cinco unidades de tiempo que se registran de manera secuencial: kin (día), uinal (mes de 20 días), tun (año de 360 días), katún (20 tun, aproximadamente 20 años) y baktún (20 katún, aproximadamente 394 años). Estas unidades se agrupan en series de 13, y cada serie completa representa un ciclo llamado \"alautún\", que equivale a aproximadamente 5125.36 años solares.</p>\n\n</p>
+(0, 'Informacion', 'Cuenta Larga', 'Informacion', '<p>La Cuenta Larga es un sistema de calendario utilizado por las antiguas civilizaciones mesoamericanas, especialmente por los mayas. Esta cuenta de tiempo es un sistema de conteo lineal que mide el tiempo transcurrido desde una fecha de inicio que los mayas consideraban como el inicio del mundo o de una era particular. Esta fecha de inicio se conoce como el punto de partida o el \"cero\" de la Cuenta Larga.\n\n
+El sistema de la Cuenta Larga consiste en cinco unidades de tiempo que se registran de manera secuencial: kin (día), uinal (mes de 20 días), tun (año de 360 días), katún (20 tun, aproximadamente 20 años) y baktún (20 katún, aproximadamente 394 años). Estas unidades se agrupan en series de 13, y cada serie completa representa un ciclo llamado \"alautún\", que equivale a aproximadamente 5125.36 años solares.\n\n
 La fecha de inicio de la Cuenta Larga es un tema de debate entre los investigadores. Algunos sostienen que el 11 de agosto de 3114 a.C. (según el calendario gregoriano) es la fecha de inicio, mientras que otros proponen diferentes fechas. Esta fecha está representada como 13.0.0.0.0 en el sistema de numeración de la Cuenta Larga.
 </p>'),
 (0, 'Informacion', 'Calculadoras', 'Informacion', '<p>Una Calculadora de Fechas Maya es una herramienta diseñada para convertir y calcular fechas entre distintos sistemas de calendarios: el calendario gregoriano, la Cuenta Larga maya, el Haab\' y el Cholq\'ij (Tzolk\'in). Esta calculadora permite a los usuarios ingresar una fecha en uno de estos sistemas y obtener las fechas correspondientes en los otros sistemas, facilitando la comprensión y el estudio de las cronologías históricas y culturales de las civilizaciones mesoamericanas.
 </p>'),
-(1, 'Calendario Gregoriano', 'Calculadoras', 'Informacion', '<h2><a href=\"../calculadora-calendario-gregoriano.php\">Calendario Gregoriano</a></h2>\n\n<p>Esta calculadora permite convertir una fecha del calendario gregoriano a los formatos de la Cuenta Larga maya, el Haab\' y el Cholq\'ij. Los usuarios ingresan una fecha en el formato gregoriano (día, mes, año), y la calculadora genera las fechas correspondientes en los tres calendarios mayas.'),  
-(2, 'Cuenta Larga', 'Calculadoras', 'Informacion', '<h2><a href=\"../calculadora-cuenta-larga.php\">Cuenta Larga</a></h2>\n\n<p>Este calculadora convierte una fecha del sistema de la Cuenta Larga maya al calendario gregoriano, así como a los calendarios Haab\' y Cholq\'ij. Los usuarios ingresan una fecha en el formato de la Cuenta Larga (baktún, katún, tun, uinal, kin), y la calculadora proporciona las fechas equivalentes en los otros tres calendarios.');
+(1, 'Calendario Gregoriano', 'Calculadoras', 'Informacion', '<h2><a href=\"../calculadora-calendario-gregoriano.php\">Calendario Gregoriano</a></h2>\n\n<p>Esta calculadora permite convertir una fecha del calendario gregoriano a los formatos de la Cuenta Larga maya, el Haab\' y el Cholq\'ij. Los usuarios ingresan una fecha en el formato gregoriano (día, mes, año), y la calculadora genera las fechas correspondientes en los tres calendarios mayas.
+</p>\n'),  
+(2, 'Cuenta Larga', 'Calculadoras', 'Informacion', '<h2><a href=\"../calculadora-cuenta-larga.php\">Cuenta Larga</a></h2>\n\n<p>Este calculadora convierte una fecha del sistema de la Cuenta Larga maya al calendario gregoriano, así como a los calendarios Haab\' y Cholq\'ij. Los usuarios ingresan una fecha en el formato de la Cuenta Larga (baktún, katún, tun, uinal, kin), y la calculadora proporciona las fechas equivalentes en los otros tres calendarios.
+</p>\n'),
+(0, 'Informacion', 'Sabiduría Maya', 'Informacion', '<p>La sabiduría maya es un vasto compendio de conocimientos transmitidos a lo largo de los siglos, abarcando desde la astronomía y las matemáticas hasta la espiritualidad y la filosofía. Los mayas desarrollaron complejos calendarios y sistemas simbólicos que reflejan una profunda comprensión del cosmos y del lugar del ser humano en él. Entre los elementos centrales de esta sabiduría se encuentran la infografía del día y la cruz maya, dos herramientas esenciales para entender el tiempo y el destino según la cosmovisión maya.
+</p>'),
+(1, 'Infografía del día', 'Sabiduría Maya', 'Informacion', '<h2><a href=\"../infografia-dia.php\">Infografía del día</a></h2>\n\n<p>La infografía del día es una representación diaria que proporciona información sobre la energía y el nahual predominante. Este sistema permite a las personas alinear sus actividades y decisiones con las energías cósmicas específicas de cada día. Y se compone por Energia, su nombre maya y significado, como también del Nahual y su significado.
+<h3>Energía</h3>
+<p>Cada día está regido por una energía particular, que tiene su propio nombre maya y significado. Esta energía influye en las características y las actividades propicias del día.
+</p><h3>Nombre Maya y Significado</h3>
+<p>El nombre maya de la energía y su interpretación ofrecen una guía sobre las cualidades y los eventos que se pueden esperar. Por ejemplo, una energía puede estar relacionada con la creación, la fertilidad o la introspección.
+</p><h3>Nahual y su Significado</h3>
+<p>Junto con la energía, cada día está asociado con un nahual, un símbolo animal o deidad que representa diversas fuerzas naturales y espirituales. El nahual aporta otra capa de significado y orientación sobre cómo interactuar con el mundo durante ese día.
+</p></p>\n'),  
+(2, 'Cruz Maya', 'Sabiduría Maya', 'Informacion', '<h2><a href=\"../cruz-maya.php\">Cruz Maya</a></h2>\n\n<p>La cruz maya es una herramienta de adivinación y autoconocimiento que muestra la influencia de diversos nahuales en la vida de una persona. Esta cruz proporciona una perspectiva más completa y personalizada del destino individual, destacando la conexión entre el ser humano y el cosmos. Se compone por el Nahual de la Mano Izquierda, de la Mano Derecha, de Concepción, de Nacimiento y del Destino.
+<h3>Nahual de la Mano Izquierda y Mano Derecha</h3>
+<p>Aquí se manifiesta el signo que va en cada uno de nuestros lados, los mayas creían que estos signos los llevamos en la mano y cada uno de esos nos proporciona alguna energía especial.
+</p><h3>Nahual de Concepción</h3>
+<p>Es el signo que llevamos y que según nuestros antepasados, es el signo del día del cual fuimos engendrados en este mundo.
+</p><h3>Nahual de Nacimiento</h3>
+<p>Signo perteneciente según el día en el que hayamos nacido.
+</p><h3>Nahual de Destino</h3>
+<p>Es el signo que nos regirá en nuestro futuro, signo que podemos utilizar para pedir salud como también para poder retirar todo lo malo que esta en nuestro camino.
+</p></p>\n');
 
 -- --------------------------------------------------------
 
