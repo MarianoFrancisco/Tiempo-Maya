@@ -1,3 +1,4 @@
+-- New database from Mariano
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -388,45 +389,24 @@ UPDATE uinal SET imagen = '../img/uinal/Muwan.png' WHERE idweb = 15;
 UPDATE uinal SET imagen = '../img/uinal/Pax.png' WHERE idweb = 16;
 UPDATE uinal SET imagen = '../img/uinal/K\'ayab\'.png' WHERE idweb = 17;
 UPDATE uinal SET imagen = '../img/uinal/K\'umk\'u\'.png' WHERE idweb = 18;
+
+-- --------------------------------------------------------
 --
--- Restricciones para tablas volcadas
+-- Estructura de tabla para la tabla `cuenta_larga`
 --
 
---
--- Filtros para la tabla `energia`
---
-ALTER TABLE `energia`
-  ADD CONSTRAINT `fk_energia_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
+CREATE TABLE IF NOT EXISTS `cuenta_larga` (
+  `nombre` varchar(25) NOT NULL,
+  `duracion` varchar(75) NOT NULL,
+  `htmlCodigo` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Filtros para la tabla `kin`
---
-ALTER TABLE `kin`
-  ADD CONSTRAINT `fk_kin_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
---
--- Filtros para la tabla `nahual`
---
-ALTER TABLE `nahual`
-  ADD CONSTRAINT `fk_nahual_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
---
--- Filtros para la tabla `pagina`
---
-ALTER TABLE `pagina`
-  ADD CONSTRAINT `FK_PAGINA_CATG` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
---
--- Filtros para la tabla `uinal`
---
-ALTER TABLE `uinal`
-  ADD CONSTRAINT `fk_uinal_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
-
--- FORK
-
--- Update mistakes name in db prod
-UPDATE energia SET nombre = 'Oxlajuj\'' WHERE id = 13;
-UPDATE kin SET nombre = 'B\'en' WHERE id = 12;
+INSERT INTO `cuenta_larga` (`nombre`, `duracion`, `htmlCodigo`) VALUES
+('Baktún', '144,000 días (20 katunes)', '<p>El baktún es una de las mayores unidades de tiempo en la Cuenta Larga, comprendiendo aproximadamente 394 años en el calendario gregoriano. Está compuesto por 20 katunes. Los baktunes eran utilizados para marcar largos períodos de la historia y la mitología maya. Por ejemplo, el final de un baktún era visto como un tiempo de renovación y transformación. El ciclo de 13 baktunes, que suma 1,872,000 días (aproximadamente 5,125 años), era particularmente significativo para los mayas, y el final de este ciclo en 2012 atrajo mucha atención global.</p>'),
+('Katún', '7,200 días (20 tuns)', '<p>El katún es una unidad mayor, equivalente a unos 20 años en el calendario gregoriano. Cada katún se compone de 20 tuns de 360 días. Los katunes eran significativos en la historia y la política maya, ya que los eventos importantes, como la ascensión de gobernantes y las guerras, a menudo se registraban en términos de katunes. Además, cada katún tenía una connotación profética, con ciertos augurios asociados a cada período.</p>'),
+('Tun', '360 días (18 uinales)', '<p>Un tun es una unidad que casi coincide con un año solar. Está compuesto por 18 uinales de 20 días cada uno, sumando un total de 360 días. Los mayas reconocían que un año solar es de aproximadamente 365 días, por lo que añadían un período de 5 días adicionales conocido como Wayeb al final de cada tun para sincronizar con el año solar. Los tuns eran fundamentales en la planificación agrícola y en la celebración de eventos religiosos.</p>'),
+('Uinal', '20 días (20 kins)', '<p>El uinal es una unidad de tiempo que equivale a aproximadamente un mes en el calendario gregoriano. Se compone de 20 kins y su propósito principal era medir períodos cortos de tiempo, útiles en la agricultura, los rituales y la vida cotidiana. Los uinales también formaban parte del ciclo Tzolk\'in, un calendario ritual de 260 días.</p>'),
+('Kin', '1 día', '<p>El kin es la unidad básica de tiempo en el calendario maya y representa un solo día. Es la base sobre la cual se construyen todas las demás unidades de tiempo en la Cuenta Larga. Los mayas tenían un profundo respeto por el paso de los días y cada kin era importante en su cosmovisión.</p>');
 
 INSERT INTO `categoria` (`nombre`) VALUES
 ('Cuenta Larga'),
@@ -465,24 +445,39 @@ La fecha de inicio de la Cuenta Larga es un tema de debate entre los investigado
 <p>Es el signo que nos regirá en nuestro futuro, signo que podemos utilizar para pedir salud como también para poder retirar todo lo malo que esta en nuestro camino.
 </p></p>\n');
 
--- --------------------------------------------------------
-
 --
--- Estructura de tabla para la tabla `cuenta_larga`
+-- Restricciones para tablas volcadas
 --
 
-CREATE TABLE IF NOT EXISTS `cuenta_larga` (
-  `nombre` varchar(25) NOT NULL,
-  `duracion` varchar(75) NOT NULL,
-  `htmlCodigo` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+--
+-- Filtros para la tabla `energia`
+--
+ALTER TABLE `energia`
+  ADD CONSTRAINT `fk_energia_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
 
-INSERT INTO `cuenta_larga` (`nombre`, `duracion`, `htmlCodigo`) VALUES
-('Baktún', '144,000 días (20 katunes)', '<p>El baktún es una de las mayores unidades de tiempo en la Cuenta Larga, comprendiendo aproximadamente 394 años en el calendario gregoriano. Está compuesto por 20 katunes. Los baktunes eran utilizados para marcar largos períodos de la historia y la mitología maya. Por ejemplo, el final de un baktún era visto como un tiempo de renovación y transformación. El ciclo de 13 baktunes, que suma 1,872,000 días (aproximadamente 5,125 años), era particularmente significativo para los mayas, y el final de este ciclo en 2012 atrajo mucha atención global.</p>'),
-('Katún', '7,200 días (20 tuns)', '<p>El katún es una unidad mayor, equivalente a unos 20 años en el calendario gregoriano. Cada katún se compone de 20 tuns de 360 días. Los katunes eran significativos en la historia y la política maya, ya que los eventos importantes, como la ascensión de gobernantes y las guerras, a menudo se registraban en términos de katunes. Además, cada katún tenía una connotación profética, con ciertos augurios asociados a cada período.</p>'),
-('Tun', '360 días (18 uinales)', '<p>Un tun es una unidad que casi coincide con un año solar. Está compuesto por 18 uinales de 20 días cada uno, sumando un total de 360 días. Los mayas reconocían que un año solar es de aproximadamente 365 días, por lo que añadían un período de 5 días adicionales conocido como Wayeb al final de cada tun para sincronizar con el año solar. Los tuns eran fundamentales en la planificación agrícola y en la celebración de eventos religiosos.</p>'),
-('Uinal', '20 días (20 kins)', '<p>El uinal es una unidad de tiempo que equivale a aproximadamente un mes en el calendario gregoriano. Se compone de 20 kins y su propósito principal era medir períodos cortos de tiempo, útiles en la agricultura, los rituales y la vida cotidiana. Los uinales también formaban parte del ciclo Tzolk\'in, un calendario ritual de 260 días.</p>'),
-('Kin', '1 día', '<p>El kin es la unidad básica de tiempo en el calendario maya y representa un solo día. Es la base sobre la cual se construyen todas las demás unidades de tiempo en la Cuenta Larga. Los mayas tenían un profundo respeto por el paso de los días y cada kin era importante en su cosmovisión.</p>');
+--
+-- Filtros para la tabla `kin`
+--
+ALTER TABLE `kin`
+  ADD CONSTRAINT `fk_kin_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
+
+--
+-- Filtros para la tabla `nahual`
+--
+ALTER TABLE `nahual`
+  ADD CONSTRAINT `fk_nahual_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
+
+--
+-- Filtros para la tabla `pagina`
+--
+ALTER TABLE `pagina`
+  ADD CONSTRAINT `FK_PAGINA_CATG` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
+
+--
+-- Filtros para la tabla `uinal`
+--
+ALTER TABLE `uinal`
+  ADD CONSTRAINT `fk_uinal_categoria1` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`nombre`);
 
 COMMIT;
 
