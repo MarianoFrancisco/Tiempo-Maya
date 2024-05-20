@@ -24,7 +24,7 @@ function generarCruz(mano_izquierda, concepcion, nombre_nahual, destino, mano_de
     }
 
     function draw(images, texts, titles) {
-        ctx.fillStyle = "#04ca89"; // Color de la cruz
+        ctx.fillStyle = "#04ca89";
         ctx.font = "bold 12px Arial";
         var totalImages = images.length;
         var maxImageWidth = Math.max(...images.map(img => img.width));
