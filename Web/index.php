@@ -33,6 +33,7 @@ $numero_uinal = $haab[2];
 
 <head>
   <meta charset="utf-8">
+	<link rel="icon" href="img/piramide-maya.png">
   <title>Tiempo Maya</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <?php include "blocks/bloquesCss.html" ?>

@@ -32,6 +32,7 @@ $significado_nahual = strval($row_nahual['significado']);
 
 <head>
     <meta charset="utf-8">
+	<link rel="icon" href="img/piramide-maya.png">
     <title>Tiempo Maya - Infografía del día</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <?php include "blocks/bloquesCss.html" ?>

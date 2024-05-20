@@ -48,7 +48,7 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                       <?php
                       if (is_array($kinesNav) || is_object($kinesNav)) {
                         foreach ($kinesNav as $kin) {
-                          echo getLi($kin, "../img/kin", "png", "models/paginaModeloElemento.php?elemento=kin#" . $kin['nombre']);
+                          echo getLi($kin, "../img/kin", "png", "../models/paginaModeloElemento.php?elemento=kin#" . $kin['nombre']);
                         }
                       }
                       ?>
@@ -65,7 +65,7 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
                       <?php if (is_array($uinalesNav) || is_object($uinalesNav)) {
                         foreach ($uinalesNav as $uinal) {
-                          echo getLi($uinal, "../img/uinal", "png", "models/paginaModeloElemento.php?elemento=uinal#" . $uinal['nombre']);
+                          echo getLi($uinal, "../img/uinal", "png", "../models/paginaModeloElemento.php?elemento=uinal#" . $uinal['nombre']);
                         }
                       }
                       ?>
@@ -93,7 +93,7 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                     <div div style="width: 200px; height: 400px; overflow-y: scroll;">
                       <?php if (is_array($nahualesNav) || is_object($nahualesNav)) {
                         foreach ($nahualesNav as $nahual) {
-                          echo getLi($nahual, "../img/nahual", "png", "models/paginaModeloElemento.php?elemento=nahual#" . $nahual['nombre']);
+                          echo getLi($nahual, "../img/nahual", "png", "../models/paginaModeloElemento.php?elemento=nahual#" . $nahual['nombre']);
                         }
                       }
                       ?>
@@ -111,7 +111,7 @@ $energiasNav = $conn->query("SELECT nombre FROM tiempo_maya.energia order by id;
                     <div div style="width: 200px; height:400px; overflow-y: scroll;">
                       <?php if (is_array($energiasNav) || is_object($energiasNav)) {
                         foreach ($energiasNav as $energia) {
-                          echo getLi($energia, "../img/energia", "png", "models/paginaModeloElemento.php?elemento=energia#" . $nahual['nombre']);
+                          echo getLi($energia, "../img/energia", "png", "../models/paginaModeloElemento.php?elemento=energia#" . $energia['nombre']);
                         }
                       }
                       ?>

@@ -21,6 +21,7 @@ $informacion = $conn->query("SELECT htmlCodigo FROM tiempo_maya.pagina WHERE nom
 
 <head>
     <meta charset="utf-8">
+	<link rel="icon" href="../img/piramide-maya.png">
     <title>Tiempo Maya - <?php echo $tabla; ?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <?php include "../blocks/bloquesCss.html" ?>
