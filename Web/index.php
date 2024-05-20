@@ -20,8 +20,8 @@ $uinals = $partes[3];
 $kins = $partes[4];
 $mostrar_cuenta_larga = "Baktún " . $baktuns . " Katún " . $katuns . " Tun "
   . $tuns . " Uinal " . $uinals . " Kin " . $kins;
-$cholquij = $nahual . " " . strval($energia);
-$nombre_nahual = $nahual;
+$nombre_nahual = calcularNahual($fecha_consultar, $conn);
+$cholquij = $nombre_nahual . " " . strval($energia);
 $numero_energia = strval($energia);
 $fecha_haab = $haab[0];
 $nombre_uinal = $haab[1];

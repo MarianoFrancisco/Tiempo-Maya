@@ -23,7 +23,8 @@ $energia = include 'backend/buscar/conseguir_energia_numero.php';
 $haab = include 'backend/buscar/conseguir_uinal_nombre.php';
 $cuenta_larga = include 'backend/buscar/conseguir_fecha_cuenta_larga.php';
 $calendario_gregoriano = include 'backend/buscar/conseguir_fecha_calendario_gregoriano.php';
-$cholquij = $nahual . " " . strval($energia);
+$nombre_nahual = calcularNahual($fecha_consultar, $conn);
+$cholquij = $nombre_nahual . " " . strval($energia);
 $fecha_haab = $haab[0];
 
 ?>

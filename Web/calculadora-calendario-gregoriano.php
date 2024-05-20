@@ -13,7 +13,8 @@ $nahual = include 'backend/buscar/conseguir_nahual_nombre.php';
 $energia = include 'backend/buscar/conseguir_energia_numero.php';
 $haab = include 'backend/buscar/conseguir_uinal_nombre.php';
 $cuenta_larga = include 'backend/buscar/conseguir_fecha_cuenta_larga.php';
-$cholquij = $nahual . " " . strval($energia);
+$nombre_nahual = calcularNahual($fecha_consultar, $conn);
+$cholquij = $nombre_nahual . " " . strval($energia);
 $fecha_haab = $haab[0];
 
 ?>
@@ -42,7 +43,8 @@ $fecha_haab = $haab[0];
                     <form action="#" method="GET">
                         <div class="mb-1">
                             <label for="fecha" class="form-label">Fecha en Calendario Gregoriano</label>
-                            <input type="date" class="form-control" name="fecha" id="fecha" value="<?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?>">
+                            <input type="date" class="form-control" name="fecha" id="fecha"
+                                value="<?php echo isset($fecha_consultar) ? $fecha_consultar : ''; ?>">
                         </div>
                         <button type="submit" class="btn btn-get-started"><i class="far fa-clock"></i> Calcular</button>
                     </form>
